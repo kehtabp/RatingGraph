@@ -1,6 +1,7 @@
 from dateutil import parser
 
 
+# noinspection PyUnusedLocal
 def process_pgn(username, game_mode):
     pgn_path = 'C:\\Users\\aleksandrovk\\Downloads\\lichess_%s_2018-12-06.pgn' % username
     file = open(pgn_path, 'r')
@@ -29,9 +30,17 @@ def process_pgn(username, game_mode):
             games.append(game)
     ratings = []
     dates = []
+    daily_games = []
     for game in games:
         timestamp = game['Timestamp']
         rating = int(game[game['Side'] + 'Elo'])
         dates.append(timestamp)
         ratings.append(rating)
-    return [ratings, dates]
+    for date in dates:
+        day_games = 0
+        for date2 in dates:
+            if date.date() == date2.date():
+                day_games += 1
+        daily_games.append(day_games)
+
+    return [list(reversed(ratings)), list(reversed(daily_games))]

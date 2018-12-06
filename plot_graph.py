@@ -1,54 +1,55 @@
-from matplotlib import pyplot as plt, animation as animation
+from matplotlib import pyplot as plt, animation
 
 
-def plot_graph(ratings: list, dates: list, username, export_video=False, show_graph=True, game_mode="Blitz",
+def plot_graph(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
                size="small"):
-    game_num = list(range(len(ratings)))
     if size == "small":
         fig = plt.figure()
+        ax = plt.axes()
+        ax2 = plt.twinx(ax)
     else:
         fig = plt.figure(figsize=(19.2, 10.8))
+        ax = plt.axes(autoscale_on=True, position=[0.05, 0.05, 0.9, 0.95])
+        ax2 = plt.twinx(ax)
+        ax2.set_position([0.05, 0.05, 0.9, 0.95])
 
-    ax = plt.axes(frameon=True, autoscale_on=True, position=[0.065, 0.065, 0.925, 0.925])
-
+    line_color = "#3F5D7D"
     ax.spines["top"].set_visible(False)
     ax.spines["bottom"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
+    ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color)
+    ax.tick_params(labelcolor=line_color, left=False, bottom=False,)
+    ax.set_xlabel("Game number")
 
-    plt.tick_params(axis="both", which="both", bottom=False, top=False,
-                    labelbottom=True, left=False, right=False, labelleft=True)
-    plt.xlabel("Game number", fontsize=16)
-    plt.ylabel("%s Lichess %s Rating" % (username, game_mode), fontsize=16)
+    bar_color = 'grey'
+    ax2.spines["top"].set_visible(False)
+    ax2.spines["bottom"].set_visible(False)
+    ax2.spines["right"].set_visible(False)
+    ax2.spines["left"].set_visible(False)
+    ax2.set_ylabel('Games per day', color=bar_color)
+    ax2.tick_params(labelcolor=bar_color, right=False, bottom=False)
 
-    first_game_num = min(game_num)
-    last_game_num = max(game_num)
+    number_of_games = len(ratings)
 
     for y in range(800, 1520, 50):
-        plt.plot(range(first_game_num, last_game_num),
-                 [y] * len(range(first_game_num, last_game_num)), "--", lw=0.5,
-                 color="black", alpha=0.3)
-    dates = list(reversed(dates))
-    ratings = list(reversed(ratings))
-    ax.set(xlim=(first_game_num, last_game_num), ylim=(min(ratings), max(ratings)))
+        ax.plot(range(0, number_of_games),
+                [y] * len(range(0, number_of_games)), "--", lw=0.5,
+                color="black", alpha=0.3)
+
+    ax.set(ylim=(round_to(min(ratings), 50), round_to(max(ratings), 50, False)))
+    ax2.set(ylim=(0, round_to(max(daily_games), 5, False)))
 
     def animate(i):
         if i >= len(ratings) - 2:
             return
-        ax.plot(game_num[i:i + 2], ratings[i:i + 2], color="#3F5D7D")
 
-        currnet_game_number = game_num[i + 2]
-        xlimstart = first_game_num
+        if i > 0:
+            ax.set(xlim=(0, i + 1))
+            ax2.bar(i, daily_games[i], color="black", alpha=0.1, width=1.0)
+            ax.plot([i - 1, i], ratings[i - 1:i + 1], color=line_color)
 
-        # games_on_graph = 500
-
-        # if i > games_on_graph:
-        #     game_frequency = 1 / (dates[i] - dates[i - games_on_graph]).total_seconds()
-        #     xlimstart = xData[i - games_on_graph]
-
-        ax.set(xlim=(xlimstart, currnet_game_number))
-
-    anim = animation.FuncAnimation(fig, animate, interval=17, frames=len(game_num) - 1)
+    anim = animation.FuncAnimation(fig, animate, interval=17, frames=number_of_games - 1)
 
     writer = animation.writers['ffmpeg']
     writer(fps=60, metadata=dict(artist='kewko'))
@@ -60,3 +61,13 @@ def plot_graph(ratings: list, dates: list, username, export_video=False, show_gr
     if show_graph:
         plt.draw()
         plt.show()
+
+
+def round_to(x, base, down=True):
+    if down:
+        return x - (x % base)
+    else:
+        if x % base != 0:
+            return x + base - (x % base)
+        else:
+            return x
