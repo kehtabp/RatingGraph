@@ -8,10 +8,12 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
         ax = plt.axes()
         ax2 = plt.twinx(ax)
     else:
-        fig = plt.figure(figsize=(19.2, 10.8))
+        fig = plt.figure(figsize=(13, 9))
         ax = plt.axes(autoscale_on=True, position=[0.05, 0.05, 0.9, 0.95])
         ax2 = plt.twinx(ax)
         ax2.set_position([0.05, 0.05, 0.9, 0.95])
+        # ax.tick_params(lablesize=16)
+        # ax2.tick_params(lablesize=16)
 
     line_color = "#3F5D7D"
     ax.spines["top"].set_visible(False)
@@ -19,7 +21,7 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
     ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color)
-    ax.tick_params(labelcolor=line_color, left=False, bottom=False,)
+    ax.tick_params(labelcolor=line_color, left=False, bottom=False)
     ax.set_xlabel("Number of games")
 
     bar_color = 'grey'
@@ -55,8 +57,8 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
     writer(fps=60, metadata=dict(artist='kewko'))
 
     if export_video:
-        anim.save('export/%s_%s_Rating_fs.mp4' % (username, game_mode))
-        print('Saved export/%s_%s_Rating_fs.mp4' % (username, game_mode))
+        anim.save(f'export/{username}_{game_mode}_Rating_{size}.mp4')
+        print(f'{username}_{game_mode}_Rating_{size}.mp4')
 
     if show_graph:
         plt.draw()
