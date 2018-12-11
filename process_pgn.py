@@ -1,11 +1,13 @@
+import sys
+from datetime import datetime
+from pathlib import Path
+from urllib import request
+
 from dateutil import parser
 
 
-# noinspection PyUnusedLocal
 def process_pgn(username, game_mode):
-    pgn_path = 'C:\\Users\\aleksandrovk\\Downloads\\lichess_%s_2018-12-06.pgn' % username
-    file = open(pgn_path, 'r')
-    text = file.read()
+    text = get_pgn(username)
     games_text = text.split('\n\n\n')
     games = []
     for index, gameText in enumerate(games_text):
@@ -13,7 +15,6 @@ def process_pgn(username, game_mode):
         #     break
         headers = gameText.split('\n')
         game = {}
-        add_game = False
         for header in headers:
             title_value = header.split(' "')
             if len(title_value) == 2:
@@ -44,3 +45,27 @@ def process_pgn(username, game_mode):
         daily_games.append(day_games)
 
     return [list(reversed(ratings)), list(reversed(daily_games))]
+
+
+def get_pgn(username):
+    today = datetime.now()
+    pgn_file_path = f'data\lichess_{username}_{today:%Y-%m-%d}.pgn'
+    url = f'https://lichess.org/games/export/{username}'
+    pgn_file = Path(pgn_file_path)
+    if not pgn_file.is_file():
+        request.urlretrieve(url, pgn_file_path, reporthook)
+    with open(pgn_file, 'r') as file:
+        return file.read()
+
+
+def reporthook(block_num, block_size, total_size):
+    read_so_far = block_num * block_size
+    if total_size > 0:
+        percent = read_so_far * 1e2 / total_size
+        s = "\r%5.1f%% %*d / %d" % (
+            percent, len(str(total_size)), read_so_far, total_size)
+        sys.stderr.write(s)
+        if read_so_far >= total_size:  # near the end
+            sys.stderr.write("\n")
+    else:  # total size is unknown
+        sys.stderr.write("read %d\n" % (read_so_far,))

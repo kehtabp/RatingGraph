@@ -20,7 +20,7 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
     ax.spines["left"].set_visible(False)
     ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color)
     ax.tick_params(labelcolor=line_color, left=False, bottom=False,)
-    ax.set_xlabel("Game number")
+    ax.set_xlabel("Number of games")
 
     bar_color = 'grey'
     ax2.spines["top"].set_visible(False)

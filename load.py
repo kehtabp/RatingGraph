@@ -1,9 +1,9 @@
 from plot_graph import plot_graph
-from process_pgn import process_pgn
+from process_json import process_json, get_json
 
-GAME_MODE = 'Blitz'
+GAME_MODE = 'blitz'
 USERNAME = 'kewko'
 
-ratings, daily_games = process_pgn(USERNAME, GAME_MODE)
-
-plot_graph(ratings, daily_games, USERNAME, size='big', export_video=True)
+json = get_json(USERNAME, 'blitz')
+ratings, daily_games = process_json(json, USERNAME)
+plot_graph(ratings, daily_games, USERNAME, size='small', export_video=False)
