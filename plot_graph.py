@@ -8,28 +8,28 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
         ax = plt.axes()
         ax2 = plt.twinx(ax)
     else:
-        fig = plt.figure(figsize=(13, 9))
-        ax = plt.axes(autoscale_on=True, position=[0.05, 0.05, 0.9, 0.95])
+        fig = plt.figure(figsize=(16, 10))
+        ax = plt.axes(autoscale_on=True, position=[0.05, 0.5, 0.8, 0.9])
         ax2 = plt.twinx(ax)
-        ax2.set_position([0.05, 0.05, 0.9, 0.95])
-        # ax.tick_params(lablesize=16)
-        # ax2.tick_params(lablesize=16)
+        ax2.set_position([0.05, 0.05, 0.8, 0.9])
+        ax.tick_params(labelsize=15)
+        ax2.tick_params(labelsize=15)
 
     line_color = "#3F5D7D"
     ax.spines["top"].set_visible(False)
     ax.spines["bottom"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
-    ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color)
+    ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color, fontsize=15)
     ax.tick_params(labelcolor=line_color, left=False, bottom=False)
-    ax.set_xlabel("Number of games")
+    ax.set_xlabel("Number of games", fontsize=15)
 
     bar_color = 'grey'
     ax2.spines["top"].set_visible(False)
     ax2.spines["bottom"].set_visible(False)
     ax2.spines["right"].set_visible(False)
     ax2.spines["left"].set_visible(False)
-    ax2.set_ylabel('Games per day', color=bar_color)
+    ax2.set_ylabel('Games per day', color=bar_color, fontsize=15)
     ax2.tick_params(labelcolor=bar_color, right=False, bottom=False)
 
     number_of_games = len(ratings)
@@ -57,8 +57,10 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
     writer(fps=60, metadata=dict(artist='kewko'))
 
     if export_video:
-        anim.save(f'export/{username}_{game_mode}_Rating_{size}.mp4')
-        print(f'{username}_{game_mode}_Rating_{size}.mp4')
+        print("Exporting video...")
+        export_file_path = f'export/ChessGraph_{username}_{game_mode}_{size}.mp4'
+        anim.save(export_file_path)
+        print(f'Saved {export_file_path}.')
 
     if show_graph:
         plt.draw()
