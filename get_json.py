@@ -9,8 +9,7 @@ def get_json(username, game_mode="bullet", update=True, ensure_complete=False):
     json_file_path = f'data\lichess_{username}_{game_mode}.json'
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {
-        'Accept': 'application/x-ndjson',
-        'Authorisation': 'Bearer gVaprOoiDer7Um0d'
+        'Accept': 'application/x-ndjson'
     }
     parameters = {
         'rated': 'true',
