@@ -6,9 +6,9 @@ def process_json(games, username='kewko'):
     ratings = []
     daily_games = []
     for game in games:
-        if game['players']['white']['user']['id'] == username:
+        if game['players']['white']['user']['name'] == username:
             rating = game['players']['white']['rating']
-        elif game['players']['black']['user']['id'] == username:
+        elif game['players']['black']['user']['name'] == username:
             rating = game['players']['black']['rating']
         else:
             continue

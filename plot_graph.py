@@ -1,17 +1,21 @@
+import requests
 from matplotlib import pyplot as plt, animation
+from requests.auth import HTTPBasicAuth
+
+from secrets import stramable_password, stramable_username
 
 
 def plot_graph(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
-               size="small"):
+               size="small", upload=False):
     if size == "small":
         fig = plt.figure()
         ax = plt.axes()
         ax2 = plt.twinx(ax)
     else:
         fig = plt.figure(figsize=(16, 10))
-        ax = plt.axes(autoscale_on=True, position=[0.05, 0.5, 0.8, 0.9])
+        ax = plt.axes(autoscale_on=True, position=[0.06, 0.06, 0.88, 0.94])
         ax2 = plt.twinx(ax)
-        ax2.set_position([0.05, 0.05, 0.8, 0.9])
+        ax2.set_position([0.06, 0.06, 0.88, 0.94])
         ax.tick_params(labelsize=15)
         ax2.tick_params(labelsize=15)
 
@@ -20,7 +24,7 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
     ax.spines["bottom"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_visible(False)
-    ax.set_ylabel("%s Lichess %s Rating" % (username, game_mode), color=line_color, fontsize=15)
+    ax.set_ylabel(f"{username}'s Lichess {game_mode} Rating", color=line_color, fontsize=15)
     ax.tick_params(labelcolor=line_color, left=False, bottom=False)
     ax.set_xlabel("Number of games", fontsize=15)
 
@@ -34,7 +38,7 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
 
     number_of_games = len(ratings)
 
-    for y in range(800, 1520, 50):
+    for y in range(800, 3000, 50):
         ax.plot(range(0, number_of_games),
                 [y] * len(range(0, number_of_games)), "--", lw=0.5,
                 color="black", alpha=0.3)
@@ -61,6 +65,14 @@ def plot_graph(ratings: list, daily_games: list, username, export_video=False, s
         export_file_path = f'export/ChessGraph_{username}_{game_mode}_{size}.mp4'
         anim.save(export_file_path)
         print(f'Saved {export_file_path}.')
+        if upload:
+            files = {'file': open(export_file_path, 'rb')}
+            print("Uploading to streamable...")
+            response = requests.post('https://api.streamable.com/upload',
+                                     auth=HTTPBasicAuth(stramable_username, stramable_password), files=files)
+            graph_url = f"https://streamable.com/{response.json()['shortcode']}"
+            print(graph_url)
+            return graph_url
 
     if show_graph:
         plt.draw()
