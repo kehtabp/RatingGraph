@@ -5,7 +5,7 @@ import ndjson
 import requests
 
 
-def get_json(username, game_mode="bullet", update=True, ensure_complete=False):
+def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False):
     json_file_path = f'data\lichess_{username}_{game_mode}.json'
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {

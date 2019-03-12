@@ -1,11 +1,12 @@
+import itertools
 from datetime import datetime
 
 
-def process_json(games, username='kewko'):
+def ratings_dailygames(games, username='kewko', number=0):
     dates = []
     ratings = []
     daily_games = []
-    for game in games:
+    for game in itertools.islice(games, 0, number):
         if game['players']['white']['user']['name'] == username:
             rating = game['players']['white']['rating']
         elif game['players']['black']['user']['name'] == username:

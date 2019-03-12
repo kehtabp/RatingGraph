@@ -5,8 +5,8 @@ from requests.auth import HTTPBasicAuth
 from secrets import stramable_password, stramable_username
 
 
-def plot_graph(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
-               size="small", upload=False):
+def plot_rating(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
+                size="small", upload=False):
     if size == "small":
         fig = plt.figure()
         ax = plt.axes()

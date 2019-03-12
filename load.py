@@ -1,6 +1,6 @@
 from get_json import get_json
-from plot_graph import plot_graph
-from process_json import process_json
+from get_ratings import ratings_dailygames
+from plot_rating import plot_rating
 
 newlines = []
 with open('data\queue', 'r') as f:
@@ -10,11 +10,11 @@ with open('data\queue', 'r') as f:
         else:
             username, game_mode = line.strip().split(',')
 
-            json = get_json(username, game_mode, update=False)
-            ratings, daily_games = process_json(json, username)
-            url = plot_graph(ratings, daily_games, username, game_mode=game_mode, size='large', export_video=True,
-                             show_graph=False,
-                             upload=True)
+            json = get_json(username, game_mode, update=True)
+            ratings, daily_games = ratings_dailygames(json, username, 1000)
+            url = plot_rating(ratings, daily_games, username, game_mode=game_mode, size='large', export_video=True,
+                              show_graph=False,
+                              upload=True)
         newlines.append(f"{username},{game_mode},{url}\n")
 with open('data\queue', 'w') as f:
     f.writelines(newlines)
