@@ -2,7 +2,7 @@
 ##To install requirements and run
 
 1) Install python and pip
-2) 
+2) Run
 ```
 pip install -r requirements.txt
 python load.py -u lichess_username -e
