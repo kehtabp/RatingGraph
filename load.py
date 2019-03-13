@@ -14,7 +14,7 @@ username_source.add_argument('--file',
 username_source.add_argument('-u', '--username',
                              action='store',
                              dest='username',
-                             help='Pass to load make graph for a single username/game mode')
+                             help='Pass to make graph for a single username/game mode')
 
 parser.add_argument('-e', '--export_video',
                     action='store_true',
@@ -64,7 +64,7 @@ if args.file:
             else:
                 username, game_mode = line.strip().split(',')
 
-                json = get_json(username, game_mode, UPDATE)
+                json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
                 ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
                 url = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=args.big,
                                   export_video=args.export,

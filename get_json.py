@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -5,7 +6,7 @@ import ndjson
 import requests
 
 
-def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False):
+def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False, maxnum=1000):
     json_file_path = f'data\lichess_{username}_{game_mode}.json'
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {
@@ -14,13 +15,19 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
     parameters = {
         'rated': 'true',
         'perfType': game_mode,
-        'max': 1000
+        'max': maxnum
     }
     json_file = Path(json_file_path)
     if not json_file.is_file():
         print(f"File {json_file_path} not found, downloading...")
         r = requests.get(url, headers=headers, params=parameters)
         print(f"Download complete.")
+        try:
+            os.mkdir('data')
+            print("data Directory Created ")
+        except FileExistsError:
+            pass
+
         with open(json_file_path, 'w') as f:
             json_games = ndjson.loads(r.text)
             ndjson.dump(json_games, f)

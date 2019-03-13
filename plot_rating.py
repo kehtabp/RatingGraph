@@ -1,3 +1,5 @@
+import os
+
 import requests
 from matplotlib import pyplot as plt, animation
 from requests.auth import HTTPBasicAuth
@@ -65,6 +67,11 @@ def plot_rating(ratings: list, daily_games: list, username, export_video=False, 
     if export_video:
         print("Exporting video...")
         export_file_path = f'export/ChessGraph_{username}_{game_mode}_{size}.mp4'
+        try:
+            os.mkdir('export')
+            print("Export Directory Created ")
+        except FileExistsError:
+            pass
         anim.save(export_file_path)
         print(f'Saved {export_file_path}.')
         if upload:
