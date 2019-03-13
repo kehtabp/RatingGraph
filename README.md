@@ -1,5 +1,5 @@
 # RatingGraph
-
+```
 python load.py -h
 usage: load.py [-h] (--file | -u USERNAME) [-e] [--upload_video]
                [-n NUMBER_OF_GAMES] [-m GAME_MODE] [-b] [--noupdate]
@@ -25,4 +25,4 @@ optional arguments:
                         Game mode (bullet/blitz/classical)
   -b, --big             Generate big chart, Defaults to smaller resolution
   --noupdate            Pass to create graph from existing data only
-
+```
