@@ -4,8 +4,6 @@ import requests
 from matplotlib import pyplot as plt, animation
 from requests.auth import HTTPBasicAuth
 
-from secrets import stramable_password, stramable_username
-
 
 def plot_rating(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
                 big=False, upload=False):
@@ -75,10 +73,11 @@ def plot_rating(ratings: list, daily_games: list, username, export_video=False, 
         anim.save(export_file_path)
         print(f'Saved {export_file_path}.')
         if upload:
+            from secrets import streamable_password, streamable_username
             files = {'file': open(export_file_path, 'rb')}
             print("Uploading to streamable...")
             response = requests.post('https://api.streamable.com/upload',
-                                     auth=HTTPBasicAuth(stramable_username, stramable_password), files=files)
+                                     auth=HTTPBasicAuth(streamable_username, streamable_password), files=files)
             graph_url = f"https://streamable.com/{response.json()['shortcode']}"
             print(graph_url)
             return graph_url
