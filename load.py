@@ -36,7 +36,7 @@ parser.add_argument('-n', '--num',
                     type=int)
 parser.add_argument('-m', '--mode',
                     action='store',
-                    default='bullet',
+                    default='blitz',
                     dest='game_mode',
                     help="Game mode (bullet/blitz/classical)")
 parser.add_argument('-b', '--big',
@@ -75,7 +75,7 @@ if args.file:
         f.writelines(newlines)
 else:
     username = args.username
-    json = get_json(username, game_mode, UPDATE)
+    json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
     ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
     url = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=args.big,
                       export_video=args.export,
