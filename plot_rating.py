@@ -6,18 +6,20 @@ from secrets import stramable_password, stramable_username
 
 
 def plot_rating(ratings: list, daily_games: list, username, export_video=False, show_graph=True, game_mode="Blitz",
-                size="small", upload=False):
-    if size == "small":
-        fig = plt.figure()
-        ax = plt.axes()
-        ax2 = plt.twinx(ax)
-    else:
+                big=False, upload=False):
+    if big:
         fig = plt.figure(figsize=(16, 10))
         ax = plt.axes(autoscale_on=True, position=[0.06, 0.06, 0.88, 0.94])
         ax2 = plt.twinx(ax)
         ax2.set_position([0.06, 0.06, 0.88, 0.94])
         ax.tick_params(labelsize=15)
         ax2.tick_params(labelsize=15)
+        size = 'big'
+    else:
+        fig = plt.figure()
+        ax = plt.axes()
+        ax2 = plt.twinx(ax)
+        size = 'small'
 
     line_color = "#3F5D7D"
     ax.spines["top"].set_visible(False)

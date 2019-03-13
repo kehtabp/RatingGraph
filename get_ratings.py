@@ -7,9 +7,9 @@ def ratings_dailygames(games, username='kewko', number=0):
     ratings = []
     daily_games = []
     for game in itertools.islice(games, 0, number):
-        if game['players']['white']['user']['name'] == username:
+        if game['players']['white']['user']['name'].casefold() == username.casefold():
             rating = game['players']['white']['rating']
-        elif game['players']['black']['user']['name'] == username:
+        elif game['players']['black']['user']['name'].casefold() == username.casefold():
             rating = game['players']['black']['rating']
         else:
             continue
