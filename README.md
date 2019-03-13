@@ -11,7 +11,7 @@ optional arguments:
   --file                Pass to load usernames and game modes from
                         data\queue.csv
   -u USERNAME, --username USERNAME
-                        Pass to load make graph for a single username/game
+                        Pass to make a graph for a single username/game
                         mode
   -e, --export_video    Export video to
                         ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4. !If
