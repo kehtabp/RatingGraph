@@ -9,7 +9,6 @@ python load.py -u lichess_username -e
 ```
 ### Help
 ```
-pip install -r requirements.txt
 python load.py -h
 usage: load.py [-h] (--file | -u USERNAME) [-e] [--upload_video]
                [-n NUMBER_OF_GAMES] [-m GAME_MODE] [-b] [--noupdate]
