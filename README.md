@@ -1,7 +1,7 @@
 # RatingGraph
 ##To install requirements and run
 
-1) Install python and pip
+1) Install python 3.2+ and pip
 2) Run
 ```
 pip install -r requirements.txt
