@@ -11,7 +11,7 @@ username_source.add_argument('--file',
                              action='store_true',
                              default=False,
                              dest='file',
-                             help='Pass to load usernames and game modes from data\queue.csv')
+                             help='Pass to load usernames and game modes from ./queue.csv')
 username_source.add_argument('-u', '--username',
                              action='store',
                              dest='username',
@@ -62,7 +62,7 @@ BIG = args.big
 newlines = []
 if args.file:
     args.upload = True
-    queue_csv = 'data\queue.csv'
+    queue_csv = 'queue.csv'
     lines = []
     with open(queue_csv, 'r') as f:
         csv_reader = csv.DictReader(f)
@@ -78,8 +78,8 @@ if args.file:
                                           show_graph=not EXPORT_VIDEO,
                                           upload=UPLOAD)
             lines.append(line)
-        with open(queue_csv, 'w') as f:
-            writer = csv.DictWriter(f, csv_reader.fieldnames)
+        with open(queue_csv, 'w', newline='') as f:
+            writer = csv.DictWriter(f, csv_reader.fieldnames, dialect=csv_reader.dialect)
             writer.writeheader()
             writer.writerows(lines)
 else:
