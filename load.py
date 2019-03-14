@@ -1,4 +1,5 @@
 import argparse
+import csv
 
 from get_json import get_json
 from get_ratings import ratings_dailygames
@@ -51,33 +52,41 @@ parser.add_argument('--noupdate',
                     help="Pass to create graph from existing data only")
 
 args = parser.parse_args()
-game_mode = args.game_mode
+GAME_MODE = args.game_mode
 UPDATE = args.UPDATE
 NUMBER_OF_GAMES = args.NUMBER_OF_GAMES
+UPLOAD = args.upload
+EXPORT_VIDEO = args.export
+BIG = args.big
 
 newlines = []
 if args.file:
-    with open('data\queue.csv', 'r') as f:
-        for line in f.readlines():
-            if len(line.split(',')) == 3:
-                username, game_mode, url = line.strip().split(',')
-            else:
-                username, game_mode = line.strip().split(',')
+    args.upload = True
+    queue_csv = 'data\queue.csv'
+    lines = []
+    with open(queue_csv, 'r') as f:
+        csv_reader = csv.DictReader(f)
+        for line in csv_reader:
+            if not line['Url']:
+                username = line['Username']
+                game_mode = line['Game mode']
 
                 json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
                 ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
-                url = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=args.big,
-                                  export_video=args.export,
-                                  show_graph=not args.export,
-                                  upload=args.upload)
-            newlines.append(f"{username},{game_mode},{url}\n")
-    with open('data\queue.csv', 'w') as f:
-        f.writelines(newlines)
+                line['Url'] = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=BIG,
+                                          export_video=EXPORT_VIDEO,
+                                          show_graph=not EXPORT_VIDEO,
+                                          upload=UPLOAD)
+            lines.append(line)
+        with open(queue_csv, 'w') as f:
+            writer = csv.DictWriter(f, csv_reader.fieldnames)
+            writer.writeheader()
+            writer.writerows(lines)
 else:
     username = args.username
-    json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
+    json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES)
     ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
-    url = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=args.big,
-                      export_video=args.export,
-                      show_graph=not args.export,
-                      upload=args.upload)
+    url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
+                      export_video=EXPORT_VIDEO,
+                      show_graph=not EXPORT_VIDEO,
+                      upload=UPLOAD)
