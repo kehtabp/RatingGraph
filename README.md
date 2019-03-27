@@ -17,17 +17,11 @@ Generate graph for Lichess
 
 optional arguments:
   -h, --help            show this help message and exit
-  --file                Pass to load usernames and game modes from
-                        data\queue.csv
+  --file                Pass to load usernames and game modes from data\queue.csv
   -u USERNAME, --username USERNAME
-                        Pass to make a graph for a single username/game
-                        mode
-  -e, --export_video    Export video to
-                        ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4. !If
-                        this is not passed graph will be displayed in the UI
-                        Window!
-  --upload_video        Upload to Streamable ./secrets.py needs to contain
-                        stramable_username and stramable_password
+                        Pass to make a graph for a single username/gamemode
+  -e, --export_video    Export video to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4. !If this is not passed graph will be displayed in the UI Window!
+  --upload_video        Upload to Streamable ./secrets.py needs to contain stramable_username and stramable_password
   -n NUMBER_OF_GAMES, --num NUMBER_OF_GAMES
                         Number of games to show on graph. (0 for all games)
   -m GAME_MODE, --mode GAME_MODE
