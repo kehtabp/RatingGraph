@@ -6,8 +6,12 @@ import ndjson
 import requests
 
 
-def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False, maxnum=1000):
-    json_file_path = f'data\lichess_{username}_{game_mode}.json'
+def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False, maxnum=1000, analysed=False):
+    if analysed:
+        json_file_path = f'data/analysed/lichess_{username}_{game_mode}.json'
+    else:
+        json_file_path = f'data\lichess_{username}_{game_mode}.json'
+
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {
         'Accept': 'application/x-ndjson'
@@ -15,12 +19,15 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
     parameters = {
         'rated': 'true',
         'perfType': game_mode,
-        'max': maxnum
+        'max': maxnum,
+        'analysed': analysed,
+        'evals': analysed
     }
     json_file = Path(json_file_path)
     if not json_file.is_file():
         print(f"File {json_file_path} not found, downloading...")
         r = requests.get(url, headers=headers, params=parameters)
+        print(r.request)
         print(f"Download complete.")
         try:
             os.mkdir('data')
