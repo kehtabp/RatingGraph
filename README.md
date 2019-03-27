@@ -9,8 +9,8 @@ python load.py -u lichess_username -e
 ```
 ### Help
 ```
-python load.py -h
-usage: load.py [-h] (--file | -u USERNAME) [-e] [--upload_video]
+python src/load.py -h
+usage: src/load.py [-h] (--file | -u USERNAME) [-e] [--upload_video]
                [-n NUMBER_OF_GAMES] [-m GAME_MODE] [-b] [--noupdate]
 
 Generate graph for Lichess
