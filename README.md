@@ -1,5 +1,5 @@
 # RatingGraph
-##To install requirements and run
+### To install requirements and run
 
 1) Install python 3.2+ and pip
 2) Run
