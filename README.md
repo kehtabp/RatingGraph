@@ -1,4 +1,6 @@
 # RatingGraph
+![Animated graph](https://github.com/kehtabp/RatingGraph/blob/master/example.gif?raw=true)
+
 ### To install requirements and run
 
 1) Install python 3.2+ and pip
