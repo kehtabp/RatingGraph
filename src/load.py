@@ -62,7 +62,7 @@ BIG = args.big
 newlines = []
 if args.file:
     args.upload = True
-    queue_csv = 'queue.csv'
+    queue_csv = 'data\queue.csv'
     lines = []
     with open(queue_csv, 'r') as f:
         csv_reader = csv.DictReader(f)

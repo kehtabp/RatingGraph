@@ -1,9 +1,25 @@
 import os
+import time
 from datetime import datetime
 from pathlib import Path
 
 import ndjson
 import requests
+
+try:
+    from secrets import lichess_api_token
+except:
+    lichess_api_token = ''
+
+
+def get(url):
+    try:
+        return requests.get(url)
+    except Exception:
+        # sleep for a bit in case that helps
+        time.sleep(1)
+        # try again
+        return get(url)
 
 
 def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False, maxnum=1000, analysed=False):
@@ -16,6 +32,8 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
     headers = {
         'Accept': 'application/x-ndjson'
     }
+    if lichess_api_token:
+        headers['Authorization'] = f'Bearer {lichess_api_token}'
     parameters = {
         'rated': 'true',
         'perfType': game_mode,
@@ -49,7 +67,17 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
         while old_games:
             until_date = datetime.fromtimestamp(until / 1000)
             print(f"Checking games before {until_date:%d/%m/%y %H:%M}...")
-            r = requests.get(url, headers=headers, params=parameters)
+            t0 = time.time()
+            try:
+                r = requests.get(url, headers=headers, params=parameters)
+            except Exception as x:
+                t1 = time.time()
+                print(f'It failed after: {t1-t0} with {x.__class__.__name__}')
+            else:
+                print('It eventually worked', r.status_code)
+            finally:
+                t2 = time.time()
+                print('Took', t2 - t0, 'seconds')
             old_games = ndjson.loads(r.text)
             if old_games:
                 until = old_games[-1]['createdAt']

@@ -12,11 +12,10 @@ def get_top_players(perf_type, num=100):
         'Accept': 'application/vnd.lichess.v3+json'
     }
     r = requests.get(url, headers=headers)
-    print(r.url)
 
     return r.json()['users']
 
 
 players = get_top_players(GAME_MODE, 100)
 for player in players:
-    get_json(player['id'], GAME_MODE, analysed="true", ensure_complete=True)
+    get_json(player['id'], GAME_MODE, analysed="true", ensure_complete=True, maxnum=100)
