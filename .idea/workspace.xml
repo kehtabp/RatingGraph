@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="">
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Add show flag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load.py" afterDir="false" />
     </list>
@@ -22,11 +22,8 @@
       <file leaf-file-name="get_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -53,9 +50,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lichess_abnew123_bullet.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/lichess_abnew123_bullet.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="1002" column="54" selection-start-line="1002" selection-start-column="54" selection-end-line="1002" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -63,10 +66,10 @@
       <file leaf-file-name="load.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="560">
+              <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#23#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +78,8 @@
       <file leaf-file-name="plot_rating.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="-714">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -98,15 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secrets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/secrets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -137,6 +131,7 @@
       <find>get</find>
       <find>sear</find>
       <find>src.</find>
+      <find>\</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,9 +163,9 @@
         <option value="$PROJECT_DIR$/data/queue.csv" />
         <option value="$PROJECT_DIR$/src/secrets.py" />
         <option value="$PROJECT_DIR$/src/get_top_players.py" />
-        <option value="$PROJECT_DIR$/src/get_json.py" />
         <option value="$PROJECT_DIR$/src/get_moves.py" />
         <option value="$PROJECT_DIR$/src/plot_rating.py" />
+        <option value="$PROJECT_DIR$/src/get_json.py" />
         <option value="$PROJECT_DIR$/src/load.py" />
       </list>
     </option>
@@ -197,6 +192,11 @@
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PGN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
@@ -553,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568900712920</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add pyhton header">
+      <created>1568901304473</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1568901304473</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix slashes">
+      <created>1568903242589</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1568903242589</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -571,13 +585,14 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996232" weight="0.3283859" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5057956" side_tool="true" visible="true" weight="0.39457202" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49947312" weight="0.32985386" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50421494" side_tool="true" visible="true" weight="0.060542796" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.32884097" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4963119" weight="0.3256785" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" visible="true" weight="0.060542796" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49315068" weight="0.32672232" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5979979" weight="0.37473905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49420443" visible="true" weight="0.39457202" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49420443" weight="0.39457202" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5822118" weight="0.2671614" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -635,7 +650,9 @@
     <MESSAGE value="Add download top players initial" />
     <MESSAGE value="reorg structure" />
     <MESSAGE value="Update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
+    <MESSAGE value="Add pyhton header" />
+    <MESSAGE value="Fix slashes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix slashes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -782,13 +799,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/backend_bases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20757">
-          <caret line="1237" selection-start-line="1237" selection-end-line="1237" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/backends/_backend_tk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -999,16 +1009,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/queue.csv">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1034,13 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1056,20 +1049,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="274">
+          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_abnew123_bullet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="1002" column="54" selection-start-line="1002" selection-start-column="54" selection-end-line="1002" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="560">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#23#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -22,8 +22,12 @@ parser.add_argument('-e', '--export_video',
                     action='store_true',
                     default=False,
                     dest='export',
-                    help='''Export video to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4.
-                         !If this is not passed graph will be displayed in the UI Window!''')
+                    help='Export video to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4. ')
+parser.add_argument('--show',
+                    action='store_true',
+                    default=False,
+                    dest='show',
+                    help='Show video. Window manager is requiered.')
 parser.add_argument('--upload_video',
                     action='store_true',
                     default=False,
@@ -58,6 +62,7 @@ UPDATE = args.UPDATE
 NUMBER_OF_GAMES = args.NUMBER_OF_GAMES
 UPLOAD = args.upload
 EXPORT_VIDEO = args.export
+SHOW_VIDEO = args.show
 BIG = args.big
 
 newlines = []
@@ -73,12 +78,13 @@ if args.file:
                 game_mode = line['Game mode']
 
                 json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
-                ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
-                line['Url'] = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=BIG,
-                                          export_video=EXPORT_VIDEO,
-                                          show_graph=not EXPORT_VIDEO,
-                                          upload=UPLOAD)
-            lines.append(line)
+                if SHOW_VIDEO or EXPORT_VIDEO:
+                    ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
+                    line['Url'] = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=BIG,
+                                              export_video=EXPORT_VIDEO,
+                                              show_graph=SHOW_VIDEO,
+                                              upload=UPLOAD)
+                    lines.append(line)
         with open(queue_csv, 'w', newline='') as fw:
             writer = csv.DictWriter(fw, csv_reader.fieldnames, dialect=csv_reader.dialect)
             writer.writeheader()
@@ -86,8 +92,9 @@ if args.file:
 else:
     username = args.username
     json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES)
-    ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
-    url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
-                      export_video=EXPORT_VIDEO,
-                      show_graph=not EXPORT_VIDEO,
-                      upload=UPLOAD)
+    if SHOW_VIDEO or EXPORT_VIDEO:
+        ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
+        url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
+                          export_video=EXPORT_VIDEO,
+                          show_graph=SHOW_VIDEO,
+                          upload=UPLOAD)
