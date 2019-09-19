@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/data/queue.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/queue.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_top_players.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_top_players.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +25,7 @@
       <file leaf-file-name="get_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
+            <state relative-caret-position="68">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -38,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_moves.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_moves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_moves.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -50,7 +46,7 @@
       <file leaf-file-name="get_top_players.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="102">
               <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -62,7 +58,7 @@
       <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="1003">
               <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
             </state>
           </provider>
@@ -77,15 +73,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queue.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="queue.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/queue.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="170">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -93,8 +89,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="425">
-                <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <first_editor relative-caret-position="459">
+                <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -171,9 +167,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="y" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1893" />
+    <option name="y" value="-8" />
     <option name="width" value="1550" />
     <option name="height" value="878" />
   </component>
@@ -193,17 +189,6 @@
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PGN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PGN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PGN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="analysed" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
@@ -559,14 +544,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1747" height="1096" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.187244" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996232" weight="0.3283859" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.40140432" side_tool="true" visible="true" weight="0.37473905" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4973585" weight="0.32614556" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50316125" side_tool="true" visible="true" weight="0.3256785" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49683878" visible="true" weight="0.3256785" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.4935849" weight="0.32745826" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5985957" visible="true" weight="0.37473905" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5985957" weight="0.37473905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49509433" weight="0.39487872" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -608,13 +594,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/get_moves.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -858,9 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.gitignore" />
     <entry file="file://$PROJECT_DIR$/setup.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,25 +955,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <first_editor relative-caret-position="459">
+            <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/queue.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1019,14 +981,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
+        <state relative-caret-position="1003">
           <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
+        <state relative-caret-position="68">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -1036,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="102">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -1047,8 +1009,23 @@
     <entry file="file://$PROJECT_DIR$/src/get_moves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/queue.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
   </component>
