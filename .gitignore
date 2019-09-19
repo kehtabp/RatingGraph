@@ -3,4 +3,4 @@ __pycache__
 data/
 export
 venv/
-!data/lichess_kewko_*k
+!data/lichess_kewko_*
