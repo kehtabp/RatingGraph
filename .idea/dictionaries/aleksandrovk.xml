@@ -6,10 +6,12 @@
       <w>kewko</w>
       <w>kqrnb</w>
       <w>noupdate</w>
+      <w>pycache</w>
       <w>shortcode</w>
       <w>streamable</w>
       <w>typer</w>
       <w>usernames</w>
+      <w>venv</w>
     </words>
   </dictionary>
 </component>

@@ -1,5 +1,6 @@
 *secret*
 __pycache__
-data
+data/
 export
-venv
+venv/
+!data/lichess_kewko_*k

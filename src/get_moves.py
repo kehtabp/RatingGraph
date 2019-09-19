@@ -3,7 +3,7 @@ from pprint import pprint
 
 from get_json import get_json
 
-json = get_json('kewko', 'blitz', True)
+json = get_json('kewko', 'blitz', update=False)
 
 
 def get_moves(username, games, piece):
