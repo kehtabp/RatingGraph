@@ -1,6 +1,6 @@
 *secret*
 __pycache__
-data/
+data/*
 export
 venv/
-!data/lichess_kewko_*
+!data/lichess_kewko_blitz.json
