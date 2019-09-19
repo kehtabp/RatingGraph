@@ -1,7 +1,7 @@
 import re
 from pprint import pprint
 
-from src.get_json import get_json
+from get_json import get_json
 
 json = get_json('kewko', 'blitz', True)
 

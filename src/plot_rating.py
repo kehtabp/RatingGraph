@@ -73,7 +73,7 @@ def plot_rating(ratings: list, daily_games: list, username, export_video=False, 
         anim.save(export_file_path)
         print(f'Saved {export_file_path}.')
         if upload:
-            from src.secrets import streamable_password, streamable_username
+            from secrets import streamable_password, streamable_username
             files = {'file': open(export_file_path, 'rb')}
             print("Uploading to streamable...")
             response = requests.post('https://api.streamable.com/upload',

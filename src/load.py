@@ -1,9 +1,9 @@
 import argparse
 import csv
 
-from src.get_json import get_json
-from src.get_ratings import ratings_dailygames
-from src.plot_rating import plot_rating
+from get_json import get_json
+from get_ratings import ratings_dailygames
+from plot_rating import plot_rating
 
 parser = argparse.ArgumentParser(description='Generate graph for Lichess ')
 username_source = parser.add_mutually_exclusive_group(required=True)
