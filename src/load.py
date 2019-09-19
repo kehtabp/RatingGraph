@@ -57,8 +57,8 @@ parser.add_argument('--noupdate',
                     dest='update',
                     help="Pass to create graph from existing data only")
 parser.add_argument('--ensurecomplete',
-                    action='store_false',
-                    default=True,
+                    action='store_true',
+                    default=False,
                     dest='ensure',
                     help="Pass to create graph from existing data only")
 
