@@ -26,7 +26,7 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
     if analysed:
         json_file_path = f'data/analysed/lichess_{username}_{game_mode}.json'
     else:
-        json_file_path = f'data\lichess_{username}_{game_mode}.json'
+        json_file_path = f'data/lichess_{username}_{game_mode}.json'
 
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {
@@ -70,6 +70,8 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
             t0 = time.time()
             try:
                 r = requests.get(url, headers=headers, params=parameters)
+                old_games = ndjson.loads(r.text)
+
             except Exception as x:
                 t1 = time.time()
                 print(f'It failed after: {t1-t0} with {x.__class__.__name__}')
@@ -78,8 +80,7 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
             finally:
                 t2 = time.time()
                 print('Took', t2 - t0, 'seconds')
-            old_games = ndjson.loads(r.text)
-            if old_games:
+            if len(old_games) > 0:
                 until = old_games[-1]['createdAt']
                 parameters['until'] = until
                 print(f'Found {len(old_games)} older games.')

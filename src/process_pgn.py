@@ -49,7 +49,7 @@ def process_pgn(username, game_mode):
 
 def get_pgn(username):
     today = datetime.now()
-    pgn_file_path = f'data\lichess_{username}_{today:%Y-%m-%d}.pgn'
+    pgn_file_path = f'data/lichess_{username}_{today:%Y-%m-%d}.pgn'
     url = f'https://lichess.org/games/export/{username}'
     pgn_file = Path(pgn_file_path)
     if not pgn_file.is_file():

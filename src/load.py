@@ -63,7 +63,7 @@ BIG = args.big
 newlines = []
 if args.file:
     args.upload = True
-    queue_csv = 'data\queue.csv'
+    queue_csv = 'data/queue.csv'
     lines = []
     with open(queue_csv, 'r') as f:
         csv_reader = csv.DictReader(f)
@@ -79,8 +79,8 @@ if args.file:
                                           show_graph=not EXPORT_VIDEO,
                                           upload=UPLOAD)
             lines.append(line)
-        with open(queue_csv, 'w', newline='') as f:
-            writer = csv.DictWriter(f, csv_reader.fieldnames, dialect=csv_reader.dialect)
+        with open(queue_csv, 'w', newline='') as fw:
+            writer = csv.DictWriter(fw, csv_reader.fieldnames, dialect=csv_reader.dialect)
             writer.writeheader()
             writer.writerows(lines)
 else:

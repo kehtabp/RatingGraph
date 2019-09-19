@@ -6,7 +6,7 @@ GAME_MODE = "blitz"
 
 
 def get_top_players(perf_type, num=100):
-    json_file_path = f'data\top_players\lichess_{perf_type}.json'
+    json_file_path = f'data/top_players/lichess_{perf_type}.json'
     url = f'https://lichess.org/player/top/{num}/{perf_type}'
     headers = {
         'Accept': 'application/vnd.lichess.v3+json'
