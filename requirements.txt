@@ -1,5 +1,5 @@
 urllib3
-requests==2.20.0
+requests==2.22.0
 python_dateutil==2.8.0
 matplotlib==3.0.3
 ndjson==0.1.0
