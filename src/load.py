@@ -27,17 +27,18 @@ parser.add_argument('--show',
                     action='store_true',
                     default=False,
                     dest='show',
-                    help='Show video. Window manager is requiered.')
+                    help='Show video. Window manager is required.')
 parser.add_argument('--upload_video',
                     action='store_true',
                     default=False,
                     dest='upload',
-                    help='Upload to Streamable ./secrets.py needs to contain stramable_username and stramable_password')
+                    help='Upload to Streamable ./secrets.py needs to contain streamable_username and '
+                         'streamable_password')
 
 parser.add_argument('-n', '--num',
                     action='store',
                     default=1000,
-                    dest='NUMBER_OF_GAMES',
+                    dest='number_of_games',
                     help="Number of games to show on graph. (0 for all games)",
                     type=int)
 parser.add_argument('-m', '--mode',
@@ -53,19 +54,27 @@ parser.add_argument('-b', '--big',
 parser.add_argument('--noupdate',
                     action='store_false',
                     default=True,
-                    dest='UPDATE',
+                    dest='update',
                     help="Pass to create graph from existing data only")
+parser.add_argument('--ensurecomplete',
+                    action='store_false',
+                    default=True,
+                    dest='ensure',
+                    help="Pass to create graph from existing data only")
+
 
 args = parser.parse_args()
 GAME_MODE = args.game_mode
-UPDATE = args.UPDATE
-NUMBER_OF_GAMES = args.NUMBER_OF_GAMES
+UPDATE = args.update
+NUMBER_OF_GAMES = args.number_of_games
 UPLOAD = args.upload
 EXPORT_VIDEO = args.export
 SHOW_VIDEO = args.show
+ENSURE_COMPLETE = args.ensure
 BIG = args.big
 
 newlines = []
+
 if args.file:
     args.upload = True
     queue_csv = 'data/queue.csv'
@@ -91,7 +100,7 @@ if args.file:
             writer.writerows(lines)
 else:
     username = args.username
-    json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES)
+    json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES, ensure_complete=ENSURE_COMPLETE)
     if SHOW_VIDEO or EXPORT_VIDEO:
         ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
         url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
