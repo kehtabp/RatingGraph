@@ -28,9 +28,10 @@ def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=
     else:
         json_file_path = f'data/lichess_{username}_{game_mode}.json'
 
-    url = f'https://lichess.org/api/games/user/{username}'
+    url = f'https://webmin.kewko.win/tunnel/link.cgi/https://lichess.org/api/games/user/{username}'
     headers = {
-        'Accept': 'application/x-ndjson'
+        'Accept': 'application/x-ndjson',
+        'Referer': 'https://webmin.kewko.win/tunnel/'
     }
     if lichess_api_token:
         headers['Authorization'] = f'Bearer {lichess_api_token}'

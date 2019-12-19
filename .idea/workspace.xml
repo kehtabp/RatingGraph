@@ -4,11 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/plot_moves.py" line="10" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/plot_moves.py" afterDir="false" />
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Add my data to github">
+      <change afterPath="$PROJECT_DIR$/src/chess.com.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/aleksandrovk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/aleksandrovk.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_moves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_json.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,21 +19,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="228">
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_moves.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/get_moves.py">
+      <file leaf-file-name="2019-08.pgn" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/chess.com/blitzingbullet007/2019-08.pgn">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="-680" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chess.com.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/chess.com.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-151">
+              <caret line="71" column="12" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -40,68 +48,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_tod_games.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/get_tod_games.py">
+      <file leaf-file-name="get_json.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/get_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lichess_kekwo_bullet.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/lichess_kekwo_bullet.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="lichess_kewko_2018-12-06.pgn" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/lichess_kewko_2018-12-06.pgn">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="247" column="22" selection-start-line="247" selection-start-column="22" selection-end-line="247" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lichess_kewko_blitz.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/lichess_kewko_blitz.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45436">
-              <caret line="16" column="478" selection-start-line="16" selection-start-column="477" selection-end-line="16" selection-end-column="478" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lichess_kewko_bullet.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/lichess_kewko_bullet.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="lichess_kewko_rapid.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/lichess_kewko_rapid.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="plot_moves.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plot_moves.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_rating.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="442">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_ratings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lichess_carneasada_bullet.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/lichess_carneasada_bullet.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="lichess_SonnovaBishop_rapid.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/lichess_SonnovaBishop_rapid.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="391">
+                <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="secrets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/secrets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -135,10 +141,19 @@
       <find>src.</find>
       <find>?</find>
       <find>#</find>
+      <find>ndjson</find>
     </findStrings>
+    <replaceStrings>
+      <replace>json</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -167,21 +182,22 @@
         <option value="$PROJECT_DIR$/src/secrets.py" />
         <option value="$PROJECT_DIR$/src/get_top_players.py" />
         <option value="$PROJECT_DIR$/src/plot_rating.py" />
-        <option value="$PROJECT_DIR$/src/get_json.py" />
         <option value="$PROJECT_DIR$/src/load.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/get_tod_games.py" />
         <option value="$PROJECT_DIR$/data/lichess_kewko_blitz.json" />
         <option value="$PROJECT_DIR$/src/plot_moves.py" />
         <option value="$PROJECT_DIR$/src/get_moves.py" />
+        <option value="$PROJECT_DIR$/src/get_json.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/chess.com.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1769" />
-    <option name="y" value="-8" />
-    <option name="width" value="1550" />
-    <option name="height" value="878" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="y" value="2" />
+    <option name="width" value="1700" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -194,6 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,39 +221,28 @@
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PGN" type="462c0819:PsiDirectoryNode" />
+              <item name=".vscode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="chess.com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PGN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (PGN) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (PGN) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="566334359" type="70582d5e:PySkeletonsNode" />
-            </path>
-            <path>
-              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (PGN) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,15 +251,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN" />
-      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\data" />
-      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\export" />
-      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\src" />
       <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\data" />
+      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN" />
+      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\export" />
+      <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,7 +274,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plot_moves">
+  <component name="RunManager" selected="Python.chess.com">
+    <configuration name="chess.com" type="PythonConfigurationType" factoryName="Python">
+      <module name="ChessGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chess.com.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="get_moves (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,24 +329,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="get_tod_games" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ChessGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\aleksandrovk\PycharmProjects\PGN\src\get_tod_games.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="get_top_players" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -354,7 +360,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/load.py" />
-      <option name="PARAMETERS" value="-u kewko -n 100 --show --noupdate" />
+      <option name="PARAMETERS" value="-u boccus79 -n 100 --show --noupdate" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -398,7 +404,7 @@
     <list>
       <item itemvalue="Python.load" />
       <item itemvalue="Python.plot_graph" />
-      <item itemvalue="Python.get_tod_games" />
+      <item itemvalue="Python.chess.com" />
       <item itemvalue="Python.get_moves" />
       <item itemvalue="Python.get_top_players" />
       <item itemvalue="Python.get_moves (1)" />
@@ -410,7 +416,6 @@
         <item itemvalue="Python.get_moves (1)" />
         <item itemvalue="Python.get_top_players" />
         <item itemvalue="Python.get_moves" />
-        <item itemvalue="Python.get_tod_games" />
       </list>
     </recent_temporary>
   </component>
@@ -648,28 +653,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1362" height="878" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30566037" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996232" weight="0.3283859" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.40621707" side_tool="true" visible="true" weight="0.27139875" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" weight="0.49895614" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.4926238" weight="0.32672232" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5937829" visible="true" weight="0.27139875" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.4224693" side_tool="true" weight="0.41001856" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.3283859" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" weight="0.19202226" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49210066" weight="0.32614556" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5909889" visible="true" weight="0.32884097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4926238" weight="0.39457202" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49151552" weight="0.2903525" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.58061117" weight="0.5250522" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.57753074" weight="0.3265306" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49367756" visible="true" weight="0.1567718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49367756" visible="true" weight="0.1567718" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49841937" weight="0.32985386" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -730,6 +734,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/get_json.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/chess.com.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="consecutive_wins == 9" language="Python" />
+          <url>file://$PROJECT_DIR$/src/chess.com.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -741,25 +763,43 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="127" />
+      <option name="time" value="166" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="[     {       &quot;eval&quot;: 25     },     {       &quot;eval&quot;: 22     },     {       &quot;eval&quot;: -8     },     {       &quot;eval&quot;: 17     },     {       &quot;eval&quot;: 2     },     {       &quot;eval&quot;: 26     },     {       &quot;eval&quot;: 6     },     {       &quot;eval&quot;: 24     },     {       &quot;eval&quot;: 9     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 35     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 41     },     {       &quot;eval&quot;: 12     },     {       &quot;eval&quot;: 63,       &quot;best&quot;: &quot;c7c5&quot;,       &quot;variation&quot;: &quot;c5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was c5.&quot;       }     },     {       &quot;eval&quot;: 40     },     {       &quot;eval&quot;: 52     },     {       &quot;eval&quot;: 40     },     {       &quot;eval&quot;: 24     },     {       &quot;eval&quot;: 12     },     {       &quot;eval&quot;: 47     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 16     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 33     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 9     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: -20     },     {       &quot;eval&quot;: -16     },     {       &quot;eval&quot;: -42     },     {       &quot;eval&quot;: -12     },     {       &quot;eval&quot;: -93,       &quot;best&quot;: &quot;c4b3&quot;,       &quot;variation&quot;: &quot;Bb3 Rd7 Bxd5 Rxd5 Rxd5 Bxd5 e4 Bb7 a5 bxa5 Bxa5 Qa4 Bb6 Qb4&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Bb3.&quot;       }     },     {       &quot;eval&quot;: -75     },     {       &quot;eval&quot;: -97     },     {       &quot;eval&quot;: -22,       &quot;best&quot;: &quot;d8d2&quot;,       &quot;variation&quot;: &quot;Rxd2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Rxd2.&quot;       }     },     {       &quot;eval&quot;: -51     },     {       &quot;eval&quot;: 15,       &quot;best&quot;: &quot;e8e7&quot;,       &quot;variation&quot;: &quot;Qe7 Bb1 Bd5 Qd3 g6 Qc2 Qc7 h4 h5 e4 Bc6 f4 Qxa5 Rd6&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Qe7.&quot;       }     },     {       &quot;eval&quot;: 7     },     {       &quot;eval&quot;: 69,       &quot;best&quot;: &quot;b7e4&quot;,       &quot;variation&quot;: &quot;Be4 f3 Bg6 Qd6 Qb8 Qxb8+ Rxb8 Rd6 b4 Rb6 Rd8 cxb4 Rd1+ Kh2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Be4.&quot;       }     },     {       &quot;eval&quot;: 48     },     {       &quot;eval&quot;: 92     },     {       &quot;eval&quot;: -78,       &quot;best&quot;: &quot;d2d7&quot;,       &quot;variation&quot;: &quot;Qd7&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Qd7.&quot;       }     },     {       &quot;eval&quot;: -87     },     {       &quot;eval&quot;: -179,       &quot;best&quot;: &quot;a2b1&quot;,       &quot;variation&quot;: &quot;Bb1&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Bb1.&quot;       }     },     {       &quot;eval&quot;: -250     },     {       &quot;eval&quot;: -248     },     {       &quot;eval&quot;: -232     },     {       &quot;eval&quot;: -198     },     {       &quot;eval&quot;: -212     },     {       &quot;eval&quot;: -201     },     {       &quot;eval&quot;: -191     },     {       &quot;eval&quot;: -376,       &quot;best&quot;: &quot;g1f2&quot;,       &quot;variation&quot;: &quot;Kf2 Qc2+ Ke1 b4 e6 b3 Qd7 b2 e7 b1=Q e8=R+ Rxe8 Qxe8+ Kh7&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -395     },     {       &quot;eval&quot;: -376     },     {       &quot;eval&quot;: -408     },     {       &quot;eval&quot;: -557,       &quot;best&quot;: &quot;g1f2&quot;,       &quot;variation&quot;: &quot;Kf2 Qb2+ Ke1 Qxe5 Qd3+ Kg8 Qd8+ Kf7 Qd7+ Kg6 Qd3+ Qf5 e4 Qe5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -463     },     {       &quot;eval&quot;: -418     },     {       &quot;eval&quot;: -399     },     {       &quot;eval&quot;: -396     },     {       &quot;eval&quot;: -390     },     {       &quot;eval&quot;: -405     },     {       &quot;eval&quot;: -403     },     {       &quot;eval&quot;: -813,       &quot;best&quot;: &quot;f2e2&quot;,       &quot;variation&quot;: &quot;Ke2 Qh2+ Ke3 Qg1+ Ke2 Qg2+ Ke3 Qh2 Qd5 Qg1+ Ke2 Qg2+ Ke3 Qg5+&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Ke2.&quot;       }     },     {       &quot;eval&quot;: -381,       &quot;best&quot;: &quot;b5b4&quot;,       &quot;variation&quot;: &quot;b4 e6 b3 e7 Qh4+ Ke2 Qxe7+ Kd1 Qc7 Qe4+ g6 Kc1 a5 f4&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was b4.&quot;       }     },     {       &quot;eval&quot;: -396     },     {       &quot;eval&quot;: -376     },     {       &quot;eval&quot;: -378     },     {       &quot;eval&quot;: -321     },     {       &quot;eval&quot;: -362     },     {       &quot;eval&quot;: -370     },     {       &quot;eval&quot;: -394     },     {       &quot;eval&quot;: -365     },     {       &quot;eval&quot;: -687,       &quot;best&quot;: &quot;e2d2&quot;,       &quot;variation&quot;: &quot;Kd2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Kd2.&quot;       }     },     {       &quot;eval&quot;: -646     },     {       &quot;eval&quot;: -1832,       &quot;best&quot;: &quot;e2f2&quot;,       &quot;variation&quot;: &quot;Kf2 a5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -1536     },     {       &quot;eval&quot;: -2594     },     {       &quot;eval&quot;: -1419     },     {       &quot;eval&quot;: -2350     },     {       &quot;eval&quot;: -1226     },     {       &quot;eval&quot;: -2575     },     {       &quot;eval&quot;: -1738     },     {       &quot;eval&quot;: -2590     },     {       &quot;eval&quot;: -2553     },     {       &quot;eval&quot;: -2569     },     {       &quot;eval&quot;: -1275     },     {       &quot;eval&quot;: -2557     },     {       &quot;eval&quot;: -2414     },     {       &quot;eval&quot;: -2486     },     {       &quot;eval&quot;: -2298     }   ]" language="Python" />
+        <watch expression="opponent" />
+        <watch expression="archive[12:].split('/')" language="Python" />
+        <watch expression="os.getcwd()" language="Python" />
+        <watch expression=" pgn_file.is_fifo()" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
       <expression>
-        <expression-string>game_frequency &gt; 1</expression-string>
+        <expression-string />
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>[     {       &quot;eval&quot;: 25     },     {       &quot;eval&quot;: 22     },     {       &quot;eval&quot;: -8     },     {       &quot;eval&quot;: 17     },     {       &quot;eval&quot;: 2     },     {       &quot;eval&quot;: 26     },     {       &quot;eval&quot;: 6     },     {       &quot;eval&quot;: 24     },     {       &quot;eval&quot;: 9     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 35     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 27     },     {       &quot;eval&quot;: 41     },     {       &quot;eval&quot;: 12     },     {       &quot;eval&quot;: 63,       &quot;best&quot;: &quot;c7c5&quot;,       &quot;variation&quot;: &quot;c5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was c5.&quot;       }     },     {       &quot;eval&quot;: 40     },     {       &quot;eval&quot;: 52     },     {       &quot;eval&quot;: 40     },     {       &quot;eval&quot;: 24     },     {       &quot;eval&quot;: 12     },     {       &quot;eval&quot;: 47     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 16     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 33     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 9     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: 0     },     {       &quot;eval&quot;: -20     },     {       &quot;eval&quot;: -16     },     {       &quot;eval&quot;: -42     },     {       &quot;eval&quot;: -12     },     {       &quot;eval&quot;: -93,       &quot;best&quot;: &quot;c4b3&quot;,       &quot;variation&quot;: &quot;Bb3 Rd7 Bxd5 Rxd5 Rxd5 Bxd5 e4 Bb7 a5 bxa5 Bxa5 Qa4 Bb6 Qb4&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Bb3.&quot;       }     },     {       &quot;eval&quot;: -75     },     {       &quot;eval&quot;: -97     },     {       &quot;eval&quot;: -22,       &quot;best&quot;: &quot;d8d2&quot;,       &quot;variation&quot;: &quot;Rxd2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Rxd2.&quot;       }     },     {       &quot;eval&quot;: -51     },     {       &quot;eval&quot;: 15,       &quot;best&quot;: &quot;e8e7&quot;,       &quot;variation&quot;: &quot;Qe7 Bb1 Bd5 Qd3 g6 Qc2 Qc7 h4 h5 e4 Bc6 f4 Qxa5 Rd6&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Qe7.&quot;       }     },     {       &quot;eval&quot;: 7     },     {       &quot;eval&quot;: 69,       &quot;best&quot;: &quot;b7e4&quot;,       &quot;variation&quot;: &quot;Be4 f3 Bg6 Qd6 Qb8 Qxb8+ Rxb8 Rd6 b4 Rb6 Rd8 cxb4 Rd1+ Kh2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Be4.&quot;       }     },     {       &quot;eval&quot;: 48     },     {       &quot;eval&quot;: 92     },     {       &quot;eval&quot;: -78,       &quot;best&quot;: &quot;d2d7&quot;,       &quot;variation&quot;: &quot;Qd7&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Qd7.&quot;       }     },     {       &quot;eval&quot;: -87     },     {       &quot;eval&quot;: -179,       &quot;best&quot;: &quot;a2b1&quot;,       &quot;variation&quot;: &quot;Bb1&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Inaccuracy&quot;,         &quot;comment&quot;: &quot;Inaccuracy. Best move was Bb1.&quot;       }     },     {       &quot;eval&quot;: -250     },     {       &quot;eval&quot;: -248     },     {       &quot;eval&quot;: -232     },     {       &quot;eval&quot;: -198     },     {       &quot;eval&quot;: -212     },     {       &quot;eval&quot;: -201     },     {       &quot;eval&quot;: -191     },     {       &quot;eval&quot;: -376,       &quot;best&quot;: &quot;g1f2&quot;,       &quot;variation&quot;: &quot;Kf2 Qc2+ Ke1 b4 e6 b3 Qd7 b2 e7 b1=Q e8=R+ Rxe8 Qxe8+ Kh7&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -395     },     {       &quot;eval&quot;: -376     },     {       &quot;eval&quot;: -408     },     {       &quot;eval&quot;: -557,       &quot;best&quot;: &quot;g1f2&quot;,       &quot;variation&quot;: &quot;Kf2 Qb2+ Ke1 Qxe5 Qd3+ Kg8 Qd8+ Kf7 Qd7+ Kg6 Qd3+ Qf5 e4 Qe5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Mistake&quot;,         &quot;comment&quot;: &quot;Mistake. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -463     },     {       &quot;eval&quot;: -418     },     {       &quot;eval&quot;: -399     },     {       &quot;eval&quot;: -396     },     {       &quot;eval&quot;: -390     },     {       &quot;eval&quot;: -405     },     {       &quot;eval&quot;: -403     },     {       &quot;eval&quot;: -813,       &quot;best&quot;: &quot;f2e2&quot;,       &quot;variation&quot;: &quot;Ke2 Qh2+ Ke3 Qg1+ Ke2 Qg2+ Ke3 Qh2 Qd5 Qg1+ Ke2 Qg2+ Ke3 Qg5+&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Ke2.&quot;       }     },     {       &quot;eval&quot;: -381,       &quot;best&quot;: &quot;b5b4&quot;,       &quot;variation&quot;: &quot;b4 e6 b3 e7 Qh4+ Ke2 Qxe7+ Kd1 Qc7 Qe4+ g6 Kc1 a5 f4&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was b4.&quot;       }     },     {       &quot;eval&quot;: -396     },     {       &quot;eval&quot;: -376     },     {       &quot;eval&quot;: -378     },     {       &quot;eval&quot;: -321     },     {       &quot;eval&quot;: -362     },     {       &quot;eval&quot;: -370     },     {       &quot;eval&quot;: -394     },     {       &quot;eval&quot;: -365     },     {       &quot;eval&quot;: -687,       &quot;best&quot;: &quot;e2d2&quot;,       &quot;variation&quot;: &quot;Kd2&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Kd2.&quot;       }     },     {       &quot;eval&quot;: -646     },     {       &quot;eval&quot;: -1832,       &quot;best&quot;: &quot;e2f2&quot;,       &quot;variation&quot;: &quot;Kf2 a5&quot;,       &quot;judgment&quot;: {         &quot;name&quot;: &quot;Blunder&quot;,         &quot;comment&quot;: &quot;Blunder. Best move was Kf2.&quot;       }     },     {       &quot;eval&quot;: -1536     },     {       &quot;eval&quot;: -2594     },     {       &quot;eval&quot;: -1419     },     {       &quot;eval&quot;: -2350     },     {       &quot;eval&quot;: -1226     },     {       &quot;eval&quot;: -2575     },     {       &quot;eval&quot;: -1738     },     {       &quot;eval&quot;: -2590     },     {       &quot;eval&quot;: -2553     },     {       &quot;eval&quot;: -2569     },     {       &quot;eval&quot;: -1275     },     {       &quot;eval&quot;: -2557     },     {       &quot;eval&quot;: -2414     },     {       &quot;eval&quot;: -2486     },     {       &quot;eval&quot;: -2298     }   ]</expression-string>
+        <expression-string>os.getcwd()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>archive[12:].split('/')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -784,27 +824,17 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ndjson.dump(new_games + json_games)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ndjson.dumps(new_games + json_games)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>new_games+json_games</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>get_json('kewko', 'blitz')[0]['createdAt']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>get_json('kewko', 'blitz')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -823,104 +853,53 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>game</expression-string>
+        <expression-string>archive[12:].split('/')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game['players']</expression-string>
+        <expression-string>archive[12:].replace('/','-')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game['players'][game['winner']]</expression-string>
+        <expression-string>archive[10:].replace('/','-')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game['players'][game['winner']]['user']['name']</expression-string>
+        <expression-string>archive[5:].replace('/','-')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game['players'][game[winner]]['user']['name']</expression-string>
+        <expression-string>archive.replace('/','-')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>f.readlines()</expression-string>
+        <expression-string>archive.replace('/'','-')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>f.write(json_games)</expression-string>
+        <expression-string>archive.replace('\\\'','\\')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ndjson.load(r.content)</expression-string>
+        <expression-string>archive.replace('\\'','\')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ndjson.dumps(new_games + json_games)</expression-string>
+        <expression-string>pgn.text</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1655" selection-start-line="1655" selection-end-line="1655" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/artist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/animation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="1209" selection-start-line="1209" selection-end-line="1209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/functools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/axis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="916" selection-start-line="916" selection-end-line="916" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_carneasada_bullet.json" />
-    <entry file="file://$PROJECT_DIR$/data/lichess_Spiritchaser84_bullet.json" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31603">
-          <caret line="1869" selection-start-line="1869" selection-end-line="1869" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.gitignore" />
     <entry file="file://$PROJECT_DIR$/setup.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/typing.py">
@@ -944,9 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_verychoppy_blitz.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz.json" />
     <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz_True.json" />
     <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz_analysed.json">
@@ -956,13 +932,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plot_time_of_the_day.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/process_pgn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/analysed/lichess_federicov93_blitz.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -984,30 +953,6 @@
     <entry file="file://$PROJECT_DIR$/data/analysed/lichess_jsammour_blitz.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/secrets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/analysed/lichess_bestinblitz_blitz.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1017,21 +962,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/queue.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1047,26 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_SonnovaBishop_rapid.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1080,35 +990,8 @@
     <entry file="file://$PROJECT_DIR$/data/lichess_corey561_bullet.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_bullet.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_2018-12-06.pgn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="247" column="22" selection-start-line="247" selection-start-column="22" selection-end-line="247" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_kewko_rapid.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_tod_games.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1124,36 +1007,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_kekwo_bullet.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_kewko_blitz.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45436">
+        <state relative-caret-position="272">
           <caret line="16" column="478" selection-start-line="16" selection-start-column="477" selection-end-line="16" selection-end-column="478" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plot_moves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="51">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1161,10 +1027,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_2018-12-06.pgn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4199">
+          <caret line="247" column="22" selection-start-line="247" selection-start-column="22" selection-end-line="247" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/process_pgn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/get_moves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
+        <state relative-caret-position="493">
           <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/chess.com/chessbrah/2010-02.pgn">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/chess.com/chessbrah/2017-07.pgn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108698">
+          <caret line="6394" column="5" selection-start-line="6394" selection-start-column="5" selection-end-line="6394" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_verychoppy_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/queue.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_boccs79_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_carneasada_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_SonnovaBishop_rapid.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_boccus79_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/secrets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="391">
+            <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/chess.com/blitzingbullet007/2019-08.pgn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chess.com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
