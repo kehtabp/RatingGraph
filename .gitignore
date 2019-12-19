@@ -6,5 +6,4 @@ venv/
 !data/lichess_kewko_blitz.json
 .idea/
 .history/
-charts/
 .idea/dictionaries/aleksandrovk.xml
