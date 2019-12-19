@@ -4,3 +4,6 @@ data/*
 export
 venv/
 !data/lichess_kewko_blitz.json
+.idea/
+.history/
+.idea/dictionaries/aleksandrovk.xml
