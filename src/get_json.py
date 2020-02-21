@@ -8,7 +8,7 @@ import requests
 
 try:
     from secrets import lichess_api_token
-except:
+except ImportError:
     lichess_api_token = ''
 
 
