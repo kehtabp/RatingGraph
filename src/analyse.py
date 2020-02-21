@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 import time
+from sys import argv
 
 import requests
 
@@ -7,6 +9,8 @@ try:
 except ImportError:
     lichess_api_token = ''
 
+if argv[1]:
+    cookie = argv[1]
 
 def get_unanalzsed_game(username):
     url = f'https://lichess.org/api/games/user/{username}'
@@ -27,12 +31,15 @@ def get_unanalzsed_game(username):
 
 def analyse(game_id):
     headers = {
-        'Cookie': 'lila2=53fd4fe392fd4497deaed0f026e493b504ab24ae-sid=vxgIQSbpCw&sessionId=GX9c8JFxFRaEQ63boAWa3R; AMCV_68044180541804760A4C98A5%40AdobeOrg=-1712354808%7CMCIDTS%7C18121%7CMCMID%7C32967858011318067642751201952902946196%7CMCAID%7CNONE%7CMCOPTOUT-1565622181s%7CNONE%7CvVersion%7C4.3.0'
+        'Cookie': cookie
     }
     url = f'https://lichess.org/{game_id}/request-analysis'
-    r = requests.post(url, headers=headers)
     print()
-    print(f'Analyzing {game_id}. {r}')
+    print(f'Analyzing {game_id}.')
+
+    r = requests.post(url, headers=headers)
+    if (r.status_code != 204):
+        raise Exception(r)
 
 
 prev_game_id = 0

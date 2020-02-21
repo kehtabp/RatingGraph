@@ -7,3 +7,5 @@ venv/
 .idea/
 .history/
 .idea/dictionaries/aleksandrovk.xml
+charts/
+.idea*
