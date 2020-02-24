@@ -1,5 +1,4 @@
 import re
-from pprint import pprint
 
 from get_json import get_json
 
@@ -17,15 +16,10 @@ def get_moves(username, games=None, piece='N', takes=False):
     # Ignores castles|(?P<castles>O-O|O-O-O)
     for game in games:
         moves = game['moves'].split(' ')
-        if game['players']['white']['user']['name'].casefold() == username.casefold():
-            white = True
-        elif game['players']['black']['user']['name'].casefold() == username.casefold():
-            white = False
-        else:
-            raise Exception("User didn't play")
+        black = user_side(game, username)
 
         for i, move in enumerate(moves):
-            if (i % 2 == 0 and white) or (i % 2 != 0 and not white):
+            if (i % 2 == 0 and not black) or (i % 2 != 0 and black):
                 move = re.search(regex, move)
                 if move and move['piece'] == piece:
                     if takes:
@@ -39,4 +33,13 @@ def get_moves(username, games=None, piece='N', takes=False):
     return board
 
 
-pprint(list(reversed(get_moves('kewko'))))
+def user_side(game, username):
+    if game['players']['black']['user']['name'].casefold() == username.casefold():
+        black = True
+    elif game['players']['white']['user']['name'].casefold() == username.casefold():
+        black = False
+    else:
+        raise Exception("User didn't play")
+    return black
+
+# pprint(list(reversed(get_moves('kewko'))))

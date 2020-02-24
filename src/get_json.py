@@ -22,16 +22,18 @@ def get(url):
         return get(url)
 
 
-def get_json(username='kewko', game_mode="bullet", update=True, ensure_complete=False, maxnum=1000, analysed=False):
+def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=False, maxnum=1000, analysed=False,
+             prefix=''):
+    # prefix = 'https://webmin.kewko.win/tunnel/link.cgi/'
     if analysed:
         json_file_path = f'data/analysed/lichess_{username}_{game_mode}.json'
     else:
         json_file_path = f'data/lichess_{username}_{game_mode}.json'
 
-    url = f'https://webmin.kewko.win/tunnel/link.cgi/https://lichess.org/api/games/user/{username}'
+    url = f'{prefix}https://lichess.org/api/games/user/{username}'
     headers = {
         'Accept': 'application/x-ndjson',
-        'Referer': 'https://webmin.kewko.win/tunnel/'
+        'Referer': prefix
     }
     if lichess_api_token:
         headers['Authorization'] = f'Bearer {lichess_api_token}'
