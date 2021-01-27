@@ -2,14 +2,18 @@
   <dictionary name="aleksandrovk">
     <words>
       <w>ensurecomplete</w>
+      <w>evals</w>
       <w>ffmpeg</w>
+      <w>fide</w>
       <w>kewko</w>
       <w>kqrnb</w>
       <w>noupdate</w>
+      <w>perfs</w>
       <w>pycache</w>
       <w>shortcode</w>
       <w>streamable</w>
       <w>typer</w>
+      <w>unanalysed</w>
       <w>usernames</w>
       <w>venv</w>
     </words>

@@ -1,3 +1,5 @@
+plotly
+pandas
 numpy
 urllib3
 requests==2.22.0

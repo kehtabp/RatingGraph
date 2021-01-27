@@ -16,7 +16,7 @@ def get_moves(username, games=None, piece='N', takes=False):
     # Ignores castles|(?P<castles>O-O|O-O-O)
     for game in games:
         moves = game['moves'].split(' ')
-        black = user_side(game, username)
+        black = is_black(game, username)
 
         for i, move in enumerate(moves):
             if (i % 2 == 0 and not black) or (i % 2 != 0 and black):
@@ -33,7 +33,7 @@ def get_moves(username, games=None, piece='N', takes=False):
     return board
 
 
-def user_side(game, username):
+def is_black(game, username):
     if game['players']['black']['user']['name'].casefold() == username.casefold():
         black = True
     elif game['players']['white']['user']['name'].casefold() == username.casefold():
@@ -42,4 +42,10 @@ def user_side(game, username):
         raise Exception("User didn't play")
     return black
 
+
+def get_color(game, username):
+    if (is_black(game, username)):
+        return 'black'
+    else:
+        return 'white'
 # pprint(list(reversed(get_moves('kewko'))))

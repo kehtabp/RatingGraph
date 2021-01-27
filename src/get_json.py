@@ -22,7 +22,7 @@ def get(url):
         return get(url)
 
 
-def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=False, maxnum=1000, analysed=False,
+def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=False, maxnum=1000, analysed=None,
              prefix=''):
     # prefix = 'https://webmin.kewko.win/tunnel/link.cgi/'
     if analysed:
@@ -40,10 +40,11 @@ def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=
     parameters = {
         'rated': 'true',
         'perfType': game_mode,
-        'max': maxnum,
-        'analysed': analysed,
-        'evals': analysed
+        'max': maxnum
     }
+    if analysed:
+        parameters['evals'] = analysed
+        parameters['analysed'] = analysed
     json_file = Path(json_file_path)
     if not json_file.is_file():
         print(f"File {json_file_path} not found, downloading...")

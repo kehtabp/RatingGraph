@@ -3,13 +3,13 @@ from datetime import datetime
 import numpy as np
 
 from get_json import get_json
-from get_moves import user_side
+from get_moves import is_black
 
 
 def game_results(analyzed_games):
     acpls = []
     for game in analyzed_games:
-        black = user_side(game, 'kewko')
+        black = is_black(game, 'kewko')
         if black:
             side = 'black'
         else:
@@ -26,7 +26,7 @@ def game_results(analyzed_games):
 def summarise(analyzed_games):
     top_moves = {}
     for game in analyzed_games:
-        black = user_side(game, 'kewko')
+        black = is_black(game, 'kewko')
         # pprint(analyzed_games)
         moves = game['moves'].split(' ')
         user_moves = moves[black::2]

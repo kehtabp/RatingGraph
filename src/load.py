@@ -3,7 +3,7 @@ import argparse
 import csv
 
 from get_json import get_json
-from get_ratings import ratings_dailygames
+from get_ratings import ratings_daily_games
 from plot_rating import plot_rating
 
 parser = argparse.ArgumentParser(description='Generate graph for Lichess ')
@@ -88,7 +88,9 @@ if args.file:
 
                 json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
                 if SHOW_VIDEO or EXPORT_VIDEO:
-                    ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
+                    ratings_and_daily_games = ratings_daily_games(json, username, NUMBER_OF_GAMES)
+                    ratings = ratings_and_daily_games['ratings']
+                    daily_games = ratings_and_daily_games['daily_games']
                     line['Url'] = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=BIG,
                                               export_video=EXPORT_VIDEO,
                                               show_graph=SHOW_VIDEO,
@@ -102,7 +104,9 @@ else:
     username = args.username
     json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES, ensure_complete=ENSURE_COMPLETE)
     if SHOW_VIDEO or EXPORT_VIDEO:
-        ratings, daily_games = ratings_dailygames(json, username, NUMBER_OF_GAMES)
+        ratings_and_daily_games = ratings_daily_games(json, username, NUMBER_OF_GAMES)
+        ratings = ratings_and_daily_games['ratings']
+        daily_games = ratings_and_daily_games['daily_games']
         url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
                           export_video=EXPORT_VIDEO,
                           show_graph=SHOW_VIDEO,

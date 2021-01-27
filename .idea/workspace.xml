@@ -5,15 +5,21 @@
     <bookmark url="file://$PROJECT_DIR$/src/get_json.py" line="7" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Add my data to github">
-      <change afterPath="$PROJECT_DIR$/src/analyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ChessGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ChessGraph.iml" afterDir="false" />
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Arg cookie">
+      <change afterPath="$PROJECT_DIR$/src/generate_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plot_web_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scratch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/aleksandrovk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/aleksandrovk.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/chart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/lichess_kewko_blitz.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/lichess_kewko_blitz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess_com_pgn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_com_pgn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/get_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_top_players.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_top_players.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_moves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sumarize.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sumarize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,42 +29,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="133">
-      <file leaf-file-name="2019-08.pgn" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/chess.com/blitzingbullet007/2019-08.pgn">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="174">
+      <file leaf-file-name="analyse.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/analyse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chess.com.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chess.com.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chess_com_pgn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chess_com_pgn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#23#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +45,11 @@
       <file leaf-file-name="get_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="1394">
+              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,17 +57,32 @@
       <file leaf-file-name="get_moves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/get_moves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="328">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_top_players.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
+      <file leaf-file-name="get_ratings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state relative-caret-position="595">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lichess_kewko_blitz.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/lichess_kewko_blitz.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="258" selection-start-line="1" selection-start-column="258" selection-end-line="1" selection-end-column="258" />
             </state>
           </provider>
         </entry>
@@ -94,22 +90,35 @@
       <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="1700">
+              <caret line="104" column="71" selection-start-line="104" selection-start-column="71" selection-end-line="104" selection-end-column="71" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/player.json">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="secrets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/secrets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sumarize.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sumarize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="365" column="13" lean-forward="true" selection-start-line="365" selection-start-column="13" selection-end-line="365" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -144,9 +153,12 @@
       <find>?</find>
       <find>#</find>
       <find>ndjson</find>
+      <find>'</find>
+      <find>rating</find>
     </findStrings>
     <replaceStrings>
       <replace>json</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -181,17 +193,24 @@
         <option value="$PROJECT_DIR$/get_top_players.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/data/queue.csv" />
-        <option value="$PROJECT_DIR$/src/plot_rating.py" />
-        <option value="$PROJECT_DIR$/src/load.py" />
         <option value="$PROJECT_DIR$/src/get_tod_games.py" />
-        <option value="$PROJECT_DIR$/data/lichess_kewko_blitz.json" />
         <option value="$PROJECT_DIR$/src/plot_moves.py" />
-        <option value="$PROJECT_DIR$/src/get_moves.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/chess.com.py" />
         <option value="$PROJECT_DIR$/src/get_top_players.py" />
-        <option value="$PROJECT_DIR$/src/get_json.py" />
         <option value="$PROJECT_DIR$/src/secrets.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/data/moves.json" />
+        <option value="$PROJECT_DIR$/src/sumarize.py" />
+        <option value="$PROJECT_DIR$/src/generate_stats.py" />
+        <option value="$PROJECT_DIR$/src/plot_rating.py" />
+        <option value="$PROJECT_DIR$/src/load.py" />
+        <option value="$PROJECT_DIR$/data/lichess_kewko_blitz.json" />
+        <option value="$PROJECT_DIR$/src/get_json.py" />
+        <option value="$PROJECT_DIR$/src/chess_com_pgn.py" />
+        <option value="$PROJECT_DIR$/src/get_moves.py" />
+        <option value="$PROJECT_DIR$/src/plot_web_graph.py" />
+        <option value="$PROJECT_DIR$/src/get_ratings.py" />
+        <option value="$PROJECT_DIR$/src/scratch.py" />
         <option value="$PROJECT_DIR$/src/analyse.py" />
       </list>
     </option>
@@ -199,8 +218,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1747" />
-    <option name="height" value="1096" />
+    <option name="width" value="1299" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -213,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +247,11 @@
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PGN" type="462c0819:PsiDirectoryNode" />
+              <item name="charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PGN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,13 +261,64 @@
             </path>
             <path>
               <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PGN" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="ndjson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="numpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="numpy" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="plotly" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +365,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyse.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="lila2=a7df379ed6c2fbf95f84bf0ef8212b9f6b844160-pieceSet3d=RedVBlue&amp;is3d=false&amp;sessionId=LgcuCx8O6TQ9efRg5Z0R1L&amp;soundSet=standard&amp;sid=INaCteMHqnilVOYdpKBaC8" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -332,24 +406,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="get_moves (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ChessGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_moves.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="get_top_players (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -381,7 +437,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/load.py" />
-      <option name="PARAMETERS" value="-u boccus79 -n 100 --show --noupdate" />
+      <option name="PARAMETERS" value="-u kewko -n 100 --show" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -404,7 +460,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="plot_moves" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="plot_web_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,7 +472,43 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plot_moves.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plot_web_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ChessGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sumarize" type="PythonConfigurationType" factoryName="Python">
+      <module name="ChessGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/sumarize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -426,19 +518,20 @@
       <item itemvalue="Python.load" />
       <item itemvalue="Python.plot_graph" />
       <item itemvalue="Python.chess.com" />
-      <item itemvalue="Python.get_moves (1)" />
-      <item itemvalue="Python.plot_moves" />
+      <item itemvalue="Python.sumarize" />
       <item itemvalue="Python.get_top_players (1)" />
       <item itemvalue="Python.get_json" />
       <item itemvalue="Python.analyse" />
+      <item itemvalue="Python.plot_web_graph" />
+      <item itemvalue="Python.scratch" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.analyse" />
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.plot_web_graph" />
         <item itemvalue="Python.get_json" />
         <item itemvalue="Python.get_top_players (1)" />
-        <item itemvalue="Python.plot_moves" />
-        <item itemvalue="Python.get_moves (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -663,7 +756,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568907172908</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add my data to github">
+      <created>1582275248745</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1582275248745</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Arg cookie">
+      <created>1582281638190</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582281638190</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -679,25 +786,36 @@
     <frame x="-8" y="-8" width="1747" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26740783" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24049151" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996232" weight="0.3283859" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.4224693" side_tool="true" weight="0.41001856" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.32776618" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" weight="0.19202226" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49210066" weight="0.32614556" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5909889" visible="true" weight="0.27974948" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5061439" side_tool="true" visible="true" weight="0.5981211" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.32672232" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49385604" visible="true" weight="0.5981211" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49210066" weight="0.32463464" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7004096" weight="0.47912318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49151552" weight="0.2903525" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49034524" weight="0.2901879" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.57753074" weight="0.4217119" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7718651" weight="0.55427974" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49502632" weight="0.5981211" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24049151" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996232" weight="0.3283859" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5353003" visible="true" weight="0.47912318" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49367756" visible="true" weight="0.1567718" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49472097" weight="0.32672232" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7718651" weight="0.55427974" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49841937" weight="0.32985386" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22813489" side_tool="true" weight="0.44341373" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49151552" weight="0.2901879" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49210066" weight="0.32463464" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -751,7 +869,8 @@
     <MESSAGE value="Add show flag" />
     <MESSAGE value="Fix ensure default" />
     <MESSAGE value="Add my data to github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add my data to github" />
+    <MESSAGE value="Arg cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arg cookie" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -759,21 +878,42 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/get_json.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/chess.com.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <condition expression="consecutive_wins == 9" language="Python" />
           <url>file://$PROJECT_DIR$/src/chess.com.py</url>
           <line>49</line>
           <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/analyse.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/sumarize.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/load.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/get_json.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="y==52" language="Python" />
+          <url>file://$PROJECT_DIR$/src/scratch.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/analyse.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="223" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -781,25 +921,43 @@
       </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint enabled="true" type="python-exception">
-          <properties notifyOnlyOnFirst="true" ignoreLibraries="true" exception="BaseException">
+          <properties notifyOnTerminate="true" ignoreLibraries="true" exception="BaseException">
             <option name="ignoreLibraries" value="true" />
-            <option name="notifyOnlyOnFirst" value="true" />
+            <option name="notifyOnTerminate" value="true" />
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="174" />
+      <option name="time" value="224" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="opponent" />
-        <watch expression="archive[12:].split('/')" language="Python" />
-        <watch expression="os.getcwd()" language="Python" />
-        <watch expression=" pgn_file.is_fifo()" />
+        <watch expression="start.date()" language="Python" />
+        <watch expression="__py_debug_temp_var_1144126334" />
+        <watch expression="math.log(78, 26)" language="Python" />
+        <watch expression="math.log(y, 26)" />
+        <watch expression="y - (y % 26)" language="Python" />
+        <watch expression="len(r.json())" language="Python" />
+        <watch expression="len(r.text.split())" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>y==52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>y==27</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>y==676</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string />
         <language-id>Python</language-id>
@@ -813,52 +971,47 @@
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>os.getcwd()</expression-string>
+        <expression-string>len(r.text.split())</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>archive[12:].split('/')</expression-string>
+        <expression-string>len(r.text)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>r.text</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game_num</expression-string>
+        <expression-string>f&quot;[{r.text}]&quot;</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>f.content</expression-string>
+        <expression-string>f&quot;[{r.text}]&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>game['players']['white']['user']['id']</expression-string>
+        <expression-string>json.loads(f&quot;[{r.text}]&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(game['createdAt'])</expression-string>
+        <expression-string>json.loads(&quot;&quot;.join(r.text.split()))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>json.loads(r.text)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new_games+json_games</expression-string>
+        <expression-string>import json;json.loads(r.text)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -876,6 +1029,21 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>df</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pd</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>game['id']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>archive[12:].split('/')</expression-string>
         <language-id>Python</language-id>
@@ -906,139 +1074,13 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>archive.replace('\\\'','\\')</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>archive.replace('\\'','\')</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pgn.text</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz.json" />
-    <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz_True.json" />
-    <entry file="file://$PROJECT_DIR$/data/lichess_glebbobrov_blitz_analysed.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2736" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plot_time_of_the_day.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_federicov93_blitz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_glebbobrov_blitz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11205">
-          <caret line="132" column="2361" selection-start-line="132" selection-start-column="2361" selection-end-line="132" selection-end-column="2361" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_zhigalko_sergei_blitz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_jsammour_blitz.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_bestinblitz_blitz.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="189" column="95" selection-start-line="189" selection-start-column="95" selection-end-line="189" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_abnew123_bullet.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="1002" column="54" selection-start-line="1002" selection-start-column="54" selection-end-line="1002" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_Aurichalcite_rapid.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_corey561_bullet.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_rapid.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_tod_games.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/566334359/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="276" column="4" selection-start-line="276" selection-start-column="4" selection-end-line="276" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kekwo_bullet.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plot_moves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1048,9 +1090,6 @@
           <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_bullet.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_kewko_2018-12-06.pgn">
       <provider selected="true" editor-type-id="text-editor">
@@ -1070,8 +1109,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/chess.com/chessbrah/2010-02.pgn">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="images" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/chess.com/chessbrah/2017-07.pgn">
       <provider selected="true" editor-type-id="text-editor">
@@ -1080,39 +1119,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_verychoppy_blitz.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/queue.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_boccs79_blitz.json" />
-    <entry file="file://$PROJECT_DIR$/data/lichess_carneasada_bullet.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/lichess_SonnovaBishop_rapid.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_boccus79_blitz.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1125,58 +1148,213 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/chess.com/blitzingbullet007/2019-08.pgn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/player.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chess.com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/aleksandrovk.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_verychoppy_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kekwo_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_bestinblitz_blitz.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18598">
+          <caret line="189" column="95" selection-start-line="189" selection-start-column="95" selection-end-line="189" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_jsemartinez_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/ndjson/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/moves.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_kewko_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_kewko_blitz.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret column="1158" selection-start-column="1158" selection-end-column="1158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/summary.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plot_moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_tod_games.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_boccus79_blitz.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/analysed/lichess_mutdpro_blitz.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130984" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_carneasada_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_rapid.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/plotly/basedatatypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1622" selection-start-line="1622" selection-end-line="1622" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_bullet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_classical.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_blitz.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="258" selection-start-line="1" selection-start-column="258" selection-end-line="1" selection-end-column="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plot_rating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="104" column="71" selection-start-line="104" selection-start-column="71" selection-end-line="104" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sumarize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generate_stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chess_com_pgn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-586">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_ratings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="595">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/load.py">
+    <entry file="file://$PROJECT_DIR$/src/plot_web_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/chess.com/blitzingbullet007/2019-08.pgn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_moves.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/lichess_kewko_blitz.json">
+    <entry file="file://$PROJECT_DIR$/src/get_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45693">
-          <caret line="16" column="478" selection-start-line="16" selection-start-column="477" selection-end-line="16" selection-end-column="478" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_top_players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chess.com.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="1394">
+          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1186,36 +1364,44 @@
     <entry file="file://$PROJECT_DIR$/src/secrets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chess_com_pgn.py">
+    <entry file="file://$PROJECT_DIR$/src/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/get_moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/player.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/get_json.py">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="365" column="13" lean-forward="true" selection-start-line="365" selection-start-column="13" selection-end-line="365" selection-end-column="13" />
         </state>
       </provider>
     </entry>
