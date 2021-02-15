@@ -64,7 +64,9 @@ while True:
             games_analysed += 1
         except Exception as e:
             if skip > 4 or games_analysed >= 30:
-                print(f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username, True)} games remaining.")
+                print(
+                    f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username, count=True)} games "
+                    f"remaining.")
                 break
             else:
                 print(f"Skipping {game_id}")
