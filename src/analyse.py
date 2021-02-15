@@ -45,7 +45,7 @@ def analyse(game_id):
     }
     url = f'https://lichess.org/{game_id}/request-analysis'
     print()
-    print(f'Analyzing {game_id}.')
+    print(f'Analyzing {game_id}.', end='')
 
     r = requests.post(url, headers=headers)
     if r.status_code != 204:
@@ -64,6 +64,7 @@ while True:
             games_analysed += 1
         except Exception as e:
             if skip > 4 or games_analysed >= 30:
+                print()
                 print(
                     f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username, count=True)} games "
                     f"remaining.")
