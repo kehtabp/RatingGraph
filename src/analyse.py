@@ -70,6 +70,7 @@ while True:
                     f"remaining.")
                 break
             else:
+                print()
                 print(f"Skipping {game_id}")
                 skip += 1
 
