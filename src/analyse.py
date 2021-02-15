@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 import time
 from sys import argv
 
@@ -15,7 +16,7 @@ if argv[1]:
     cookie = argv[1]
 
 
-def get_unanalysed_game(username, count=False):
+def get_unanalysed_game(username, skip=0, count=False):
     url = f'https://lichess.org/api/games/user/{username}'
     headers = {
         'Accept': 'application/x-ndjson',
@@ -30,11 +31,12 @@ def get_unanalysed_game(username, count=False):
         'tags': False,
     }
     if not count:
-        params['max'] = 1
+        params['max'] = skip + 1
+
     r = requests.get(url, params=params, headers=headers)
     if count:
         return len(r.text.split())
-    return r.json()['id']
+    return json.loads(r.text.split()[-1])['id']
 
 
 def analyse(game_id):
@@ -52,16 +54,21 @@ def analyse(game_id):
 
 prev_game_id = 0
 games_analysed = 0
+skip = 0
 while True:
     username = 'kewko'
-    game_id = get_unanalysed_game(username)
+    game_id = get_unanalysed_game(username, skip=skip)
     if game_id != prev_game_id:
         try:
             analyse(game_id)
             games_analysed += 1
         except Exception as e:
-            print(f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username,True)} games remaining.")
-            break
+            if skip > 4 or games_analysed >= 30:
+                print(f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username, True)} games remaining.")
+                break
+            else:
+                print(f"Skipping {game_id}")
+                skip += 1
 
     prev_game_id = game_id
     time.sleep(5)
