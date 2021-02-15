@@ -73,7 +73,7 @@ while True:
                 print()
                 print(f"Skipping {game_id}")
                 skip += 1
-
-    prev_game_id = game_id
-    time.sleep(5)
-    print(".", end='')
+    else:
+        prev_game_id = game_id
+        time.sleep(5)
+        print(".", end='')

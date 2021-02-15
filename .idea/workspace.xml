@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/get_json.py" line="7" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="">
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Fix game count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyse.py" afterDir="false" />
     </list>
@@ -696,7 +696,28 @@
       <option name="project" value="LOCAL" />
       <updated>1613404405750</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Fix game count">
+      <created>1613405192528</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1613405192528</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Fix formatting">
+      <created>1613405329522</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1613405329522</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Fix print format">
+      <created>1613405377446</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1613405377446</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -749,7 +770,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Split stuff up" />
     <MESSAGE value="Add game frequency" />
     <MESSAGE value="Add json and step loading" />
     <MESSAGE value="Minor improvements and refactors" />
@@ -772,7 +792,10 @@
     <MESSAGE value="Arg cookie" />
     <MESSAGE value="Stuff" />
     <MESSAGE value="Skip a game if analysis fails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Skip a game if analysis fails" />
+    <MESSAGE value="Fix game count" />
+    <MESSAGE value="Fix formatting" />
+    <MESSAGE value="Fix print format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix print format" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -785,11 +808,6 @@
           <url>file://$PROJECT_DIR$/src/chess.com.py</url>
           <line>49</line>
           <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/analyse.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/sumarize.py</url>
