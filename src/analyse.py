@@ -55,8 +55,8 @@ def analyse(game_id):
 prev_game_id = 0
 games_analysed = 0
 skip = 0
+username = 'kewko'
 while True:
-    username = 'kewko'
     game_id = get_unanalysed_game(username, skip=skip)
     if game_id != prev_game_id:
         try:
@@ -70,10 +70,10 @@ while True:
                     f"remaining.")
                 break
             else:
-                print()
+                print(e)
                 print(f"Skipping {game_id}")
                 skip += 1
     else:
-        prev_game_id = game_id
-        time.sleep(5)
         print(".", end='')
+    time.sleep(5)
+    prev_game_id = game_id
