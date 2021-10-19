@@ -12,16 +12,6 @@ except ImportError:
     lichess_api_token = ''
 
 
-def get(url):
-    try:
-        return requests.get(url)
-    except Exception:
-        # sleep for a bit in case that helps
-        time.sleep(1)
-        # try again
-        return get(url)
-
-
 def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=False, maxnum=1000, analysed=None,
              prefix=''):
     # prefix = 'https://webmin.kewko.win/tunnel/link.cgi/'
@@ -78,7 +68,7 @@ def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=
 
             except Exception as x:
                 t1 = time.time()
-                print(f'It failed after: {t1-t0} with {x.__class__.__name__}')
+                print(f'It failed after: {t1 - t0} with {x.__class__.__name__}')
             else:
                 print('It eventually worked', r.status_code)
             finally:
@@ -114,3 +104,13 @@ def get_json(username='kewko', game_mode="blitz", update=False, ensure_complete=
         print('No newer games found')
 
     return new_games + json_games
+
+
+def get(url):
+    try:
+        return requests.get(url)
+    except Exception:
+        # sleep for a bit in case that helps
+        time.sleep(1)
+        # try again
+        return get(url)

@@ -5,12 +5,13 @@
     <bookmark url="file://$PROJECT_DIR$/src/get_json.py" line="7" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Fix print format">
-      <change afterPath="$PROJECT_DIR$/src/get_blunders.py" afterDir="false" />
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Fix and reformat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_moves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_tod_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_tod_games.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_blunders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_blunders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_json.py" afterDir="false" />
+    </list>
+    <list id="65cea466-3941-4297-b0ff-157546e88339" name="Add blunder finder" comment="">
+      <change beforePath="$PROJECT_DIR$/src/get_blunders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_blunders.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +115,17 @@
         <option value="$PROJECT_DIR$/src/analyse.py" />
       </list>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/get_blunders.py">
+      <ranges>
+        <range start1="7" end1="8" start2="7" end2="7" changelist="65cea466-3941-4297-b0ff-157546e88339" />
+        <range start1="9" end1="10" start2="8" end2="9" changelist="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" />
+        <range start1="14" end1="27" start2="13" end2="30" changelist="65cea466-3941-4297-b0ff-157546e88339" />
+        <range start1="41" end1="42" start2="44" end2="45" changelist="65cea466-3941-4297-b0ff-157546e88339" />
+        <range start1="47" end1="50" start2="50" end2="54" changelist="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -395,6 +407,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="" />
+      <changelist id="65cea466-3941-4297-b0ff-157546e88339" name="Add blunder finder" comment="" />
       <created>1541600895076</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -673,7 +686,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614264427369</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add blunder finder">
+      <created>1634653992269</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1634653992269</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add blunder finder">
+      <created>1634655510153</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1634655510153</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -726,8 +753,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add json and step loading" />
-    <MESSAGE value="Minor improvements and refactors" />
     <MESSAGE value="Graph font" />
     <MESSAGE value="Add streamable uploading" />
     <MESSAGE value="Refactoring and game limit" />
@@ -751,7 +776,9 @@
     <MESSAGE value="Fix formatting" />
     <MESSAGE value="Fix print format" />
     <MESSAGE value="Fix skip bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix skip bug" />
+    <MESSAGE value="Add blunder finder" />
+    <MESSAGE value="Fix and reformat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix and reformat" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -777,7 +804,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/get_json.py</url>
-          <line>100</line>
+          <line>90</line>
           <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -797,9 +824,9 @@
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/get_blunders.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="245" />
+          <url>file://$PROJECT_DIR$/src/get_json.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="247" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -820,6 +847,7 @@
         <watch expression="y - (y % 26)" language="Python" />
         <watch expression="len(r.json())" language="Python" />
         <watch expression="len(r.text.split())" language="Python" />
+        <watch expression="(i+black)%2" language="Python" />
       </configuration>
     </watches-manager>
   </component>

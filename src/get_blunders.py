@@ -7,7 +7,7 @@ def get_blunders(username, games=None, before_move=10, step=5):
     blunder_counter = 0
     blunder_list = []
     if games is None:
-        games = get_json('kewko', 'blitz', update=False, analysed=True)
+        games = get_json('kewko', 'blitz', update=True, analysed=True)
     for game in games:
         black = is_black(game, username)
         created_time = game['createdAt']
@@ -45,6 +45,7 @@ def get_color(game, username):
         return ''
 
 
-step = 5
-for i in range(5, 10, step):
-    get_blunders('kewko', before_move=i, step=step)
+g_games = get_json('kewko', 'blitz', update=True, analysed=True)
+g_step = 10
+for i in range(10, 150, g_step):
+    get_blunders('kewko', before_move=i, games=g_games, step=g_step)
