@@ -5,9 +5,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/get_json.py" line="7" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Fix game count">
+    <list default="true" id="2ef302fb-96dc-4d3f-a2f6-d8209849c9c1" name="Default" comment="Fix print format">
+      <change afterPath="$PROJECT_DIR$/src/get_blunders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_moves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_tod_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_tod_games.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,14 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,6 +231,7 @@
   <component name="PropertiesComponent">
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -235,28 +247,7 @@
       <recent name="C:\Users\aleksandrovk\PycharmProjects\PGN\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analyse">
-    <configuration name="analyse" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ChessGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analyse.py" />
-      <option name="PARAMETERS" value="lila2=8ba9020618a4e922c9653a387b4b2d6a814cd9d5-bg=dark&amp;pieceSet=horsey&amp;sessionId=l8qvAyKmbnqvz89LeSJp3u&amp;sid=E1AGc7q4JoT8srDA7seISM&amp;zoom2=200" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.get_blunders">
     <configuration name="chess.com" type="PythonConfigurationType" factoryName="Python">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,7 +269,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_blunders" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,11 +277,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_json.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_blunders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,7 +290,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_top_players (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_json" type="PythonConfigurationType" factoryName="Python">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,11 +298,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_top_players.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,48 +353,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot_web_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ChessGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/plot_web_graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ChessGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scratch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sumarize" type="PythonConfigurationType" factoryName="Python">
       <module name="ChessGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -426,23 +375,16 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.chess.com" />
       <item itemvalue="Python.load" />
       <item itemvalue="Python.plot_graph" />
-      <item itemvalue="Python.chess.com" />
       <item itemvalue="Python.sumarize" />
-      <item itemvalue="Python.get_top_players (1)" />
       <item itemvalue="Python.get_json" />
-      <item itemvalue="Python.analyse" />
-      <item itemvalue="Python.plot_web_graph" />
-      <item itemvalue="Python.scratch" />
+      <item itemvalue="Python.get_blunders" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analyse" />
-        <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.plot_web_graph" />
-        <item itemvalue="Python.get_json" />
-        <item itemvalue="Python.get_top_players (1)" />
+        <item itemvalue="Python.get_blunders" />
       </list>
     </recent_temporary>
   </component>
@@ -717,7 +659,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613405377446</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fix print format">
+      <created>1613405546550</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1613405546550</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix skip bug">
+      <created>1614264427369</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1614264427369</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -770,7 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add game frequency" />
     <MESSAGE value="Add json and step loading" />
     <MESSAGE value="Minor improvements and refactors" />
     <MESSAGE value="Graph font" />
@@ -795,7 +750,8 @@
     <MESSAGE value="Fix game count" />
     <MESSAGE value="Fix formatting" />
     <MESSAGE value="Fix print format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix print format" />
+    <MESSAGE value="Fix skip bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix skip bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -829,6 +785,21 @@
           <url>file://$PROJECT_DIR$/src/scratch.py</url>
           <line>9</line>
           <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/get_moves.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/get_moves.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/get_blunders.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="245" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

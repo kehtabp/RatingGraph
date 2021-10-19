@@ -3,7 +3,7 @@ from pprint import pprint
 
 from get_json import get_json
 
-json = get_json(game_mode='blitz', update=False)
+json = get_json(game_mode='blitz', update=False, analysed=True)
 
 
 def win_rate(games, username='kewko'):
@@ -27,8 +27,8 @@ def win_rate(games, username='kewko'):
             draws[game_time_hour] += 1
 
     for hour in hours:
-        win_rates.append(wins[hour] / game_num[hour])
-    return [win_rates, game_num]
+        win_rates.append([hour, wins[hour] / game_num[hour], game_num[hour]])
+    return win_rates
 
 
 pprint(win_rate(json))

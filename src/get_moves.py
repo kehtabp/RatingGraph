@@ -1,4 +1,5 @@
 import re
+from pprint import pprint
 
 from get_json import get_json
 
@@ -8,7 +9,7 @@ from get_json import get_json
 
 def get_moves(username, games=None, piece='N', takes=False):
     if games is None:
-        games = get_json('kewko', 'blitz', update=False)
+        games = get_json('kewko', 'blitz', update=False, analysed=True)
     print(f"Getting moves for {piece}")
     board = [[0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8]
     regex = re.compile(
@@ -48,4 +49,6 @@ def get_color(game, username):
         return 'black'
     else:
         return 'white'
-# pprint(list(reversed(get_moves('kewko'))))
+
+
+pprint(list(reversed(get_moves('kewko'))))

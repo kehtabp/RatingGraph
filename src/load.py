@@ -60,7 +60,7 @@ parser.add_argument('--ensurecomplete',
                     action='store_true',
                     default=False,
                     dest='ensure',
-                    help="Pass to create graph from existing data only")
+                    help="If some games are already loaded also check for previous games")
 
 
 args = parser.parse_args()
