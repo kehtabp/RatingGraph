@@ -13,6 +13,7 @@ def ratings_daily_games(games, username='kewko', number=None):
     for game in itertools.islice(games, 0, number):
         color = get_color(game, username)
         rating = game['players'][color]['rating']
+        if 'ratingDiff' not in game['players'][color]: continue
         rating_diff = game['players'][color]['ratingDiff']
         old_rating = rating + rating_diff
 

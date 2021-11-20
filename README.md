@@ -7,7 +7,7 @@
 2) Run
 ```
 pip install -r requirements.txt
-python load.py -u lichess_username -e
+python src/load.py -u lichess_username -e
 ```
 ### Help
 ```
