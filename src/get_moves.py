@@ -2,16 +2,14 @@ import re
 from pprint import pprint
 
 from get_json import get_json
-
-
-# json = get_json('kewko', 'blitz', update=False)
+from utils import is_black, get_color, logger
 
 
 def get_moves(username, games=None, piece='N', takes=False):
     if games is None:
-        games = get_json('kewko', 'blitz', update=False, analysed=True)
-    print(f"Getting moves for {piece}")
-    board = [[0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8]
+        games = get_json(username, 'blitz', update=False, analysed=True)
+    logger.info(f"Getting moves for {piece}")
+    board = [[0] * 8 for _ in range(8)]
     regex = re.compile(
         '(?P<piece>[KQRNB])?(?P<specifier>[a-h1-8])?(?P<takes>x)?(?P<position>[a-h][1-8])(?P<action>[#+])?')
     # Ignores castles|(?P<castles>O-O|O-O-O)
@@ -29,26 +27,9 @@ def get_moves(username, games=None, piece='N', takes=False):
                     position = move['position']
                     file = ord(position[:1]) - 97
                     rank = int(position[1:]) - 1
-                    # print(f'{move["piece"]} moved to {move["position"]}')
                     board[rank][file] += 1
     return board
 
 
-def is_black(game, username):
-    if game['players']['black']['user']['name'].casefold() == username.casefold():
-        black = True
-    elif game['players']['white']['user']['name'].casefold() == username.casefold():
-        black = False
-    else:
-        raise Exception("User didn't play")
-    return black
-
-
-def get_color(game, username):
-    if (is_black(game, username)):
-        return 'black'
-    else:
-        return 'white'
-
-
-pprint(list(reversed(get_moves('kewko'))))
+if __name__ == '__main__':
+    pprint(list(reversed(get_moves('kewko'))))

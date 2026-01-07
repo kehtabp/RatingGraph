@@ -22,7 +22,12 @@ parser.add_argument('-e', '--export_video',
                     action='store_true',
                     default=False,
                     dest='export',
-                    help='Export video to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4. ')
+                    help='Export video to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.mp4')
+parser.add_argument('-i', '--export_image',
+                    action='store_true',
+                    default=False,
+                    dest='export_image',
+                    help='Export final graph as PNG to ./export/ChessGraph_USERNAME_GAMEMODE_SIZE.png')
 parser.add_argument('--show',
                     action='store_true',
                     default=False,
@@ -69,6 +74,7 @@ UPDATE = args.update
 NUMBER_OF_GAMES = args.number_of_games
 UPLOAD = args.upload
 EXPORT_VIDEO = args.export
+EXPORT_IMAGE = args.export_image
 SHOW_VIDEO = args.show
 ENSURE_COMPLETE = args.ensure
 BIG = args.big
@@ -87,12 +93,13 @@ if args.file:
                 game_mode = line['Game mode']
 
                 json = get_json(username, game_mode, UPDATE, maxnum=NUMBER_OF_GAMES)
-                if SHOW_VIDEO or EXPORT_VIDEO:
+                if SHOW_VIDEO or EXPORT_VIDEO or EXPORT_IMAGE:
                     ratings_and_daily_games = ratings_daily_games(json, username, NUMBER_OF_GAMES)
                     ratings = ratings_and_daily_games['ratings']
                     daily_games = ratings_and_daily_games['daily_games']
                     line['Url'] = plot_rating(ratings, daily_games, username, game_mode=game_mode, big=BIG,
                                               export_video=EXPORT_VIDEO,
+                                              export_image=EXPORT_IMAGE,
                                               show_graph=SHOW_VIDEO,
                                               upload=UPLOAD)
                     lines.append(line)
@@ -103,11 +110,19 @@ if args.file:
 else:
     username = args.username
     json = get_json(username, GAME_MODE, UPDATE, maxnum=NUMBER_OF_GAMES, ensure_complete=ENSURE_COMPLETE)
-    if SHOW_VIDEO or EXPORT_VIDEO:
+    if not json:
+        print(f"Error: No games found for user '{username}' in {GAME_MODE} mode.")
+        exit(1)
+    if SHOW_VIDEO or EXPORT_VIDEO or EXPORT_IMAGE:
         ratings_and_daily_games = ratings_daily_games(json, username, NUMBER_OF_GAMES)
         ratings = ratings_and_daily_games['ratings']
         daily_games = ratings_and_daily_games['daily_games']
+        if not ratings:
+            print(f"Error: No rated games with rating data found for '{username}'.")
+            print(f"Total games fetched: {len(json)}, but none had ratingDiff data.")
+            exit(1)
         url = plot_rating(ratings, daily_games, username, game_mode=GAME_MODE, big=BIG,
                           export_video=EXPORT_VIDEO,
+                          export_image=EXPORT_IMAGE,
                           show_graph=SHOW_VIDEO,
                           upload=UPLOAD)

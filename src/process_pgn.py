@@ -5,14 +5,14 @@ from urllib import request
 
 from dateutil import parser
 
+from utils import count_daily_games
+
 
 def process_pgn(username, game_mode):
     text = get_pgn(username)
     games_text = text.split('\n\n\n')
     games = []
     for index, gameText in enumerate(games_text):
-        # if index == 100:
-        #     break
         headers = gameText.split('\n')
         game = {}
         for header in headers:
@@ -31,18 +31,14 @@ def process_pgn(username, game_mode):
             games.append(game)
     ratings = []
     dates = []
-    daily_games = []
     for game in games:
         timestamp = game['Timestamp']
         rating = int(game[game['Side'] + 'Elo'])
         dates.append(timestamp)
         ratings.append(rating)
-    for date in dates:
-        day_games = 0
-        for date2 in dates:
-            if date.date() == date2.date():
-                day_games += 1
-        daily_games.append(day_games)
+
+    # O(n) daily game counting using Counter (was O(n²))
+    daily_games = count_daily_games(dates)
 
     return [list(reversed(ratings)), list(reversed(daily_games))]
 

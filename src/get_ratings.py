@@ -1,19 +1,23 @@
 import itertools
 from datetime import datetime, timedelta
 
-from get_moves import get_color
+from utils import get_color, count_daily_games, logger
 
 
 def ratings_daily_games(games, username='kewko', number=None):
     dates = []
     ratings = []
-    daily_games = []
     weekly_games = {}
+    skipped = 0
 
-    for game in itertools.islice(games, 0, number):
+    # number=0 means all games (same as None)
+    limit = number if number and number > 0 else None
+    for game in itertools.islice(games, 0, limit):
         color = get_color(game, username)
         rating = game['players'][color]['rating']
-        if 'ratingDiff' not in game['players'][color]: continue
+        if 'ratingDiff' not in game['players'][color]:
+            skipped += 1
+            continue
         rating_diff = game['players'][color]['ratingDiff']
         old_rating = rating + rating_diff
 
@@ -32,17 +36,22 @@ def ratings_daily_games(games, username='kewko', number=None):
 
         ratings.append(rating)
         ratings.append(old_rating)
+
     wg = []
     wgt = []
     for week in weekly_games:
         wg.append(weekly_games[week]['games'])
         wgt.append(weekly_games[week]['week_start'])
-    for date in dates:
-        day_games = 0
-        for date2 in dates:
-            if date.date() == date2.date():
-                day_games += 1
-        daily_games.append(day_games)
+
+    # O(n) daily game counting using Counter (was O(n²))
+    daily_games = count_daily_games(dates)
+
+    total_processed = len(ratings) // 2  # Each game adds 2 rating points
+    logger.info(f"Processed {total_processed} games with rating data (skipped {skipped} without ratingDiff)")
+
+    if not ratings:
+        logger.warning("No games with rating data found!")
+
     return {'ratings': list(reversed(ratings)), 'daily_games': list(reversed(daily_games)),
             'dates': list(reversed(dates)), 'weekly_games': list(reversed(wg)),
             'weekly_starts': list(reversed(wgt))}

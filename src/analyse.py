@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 import json
+import sys
 import time
-from sys import argv
 
 import requests
 
+from utils import logger
+
 try:
     from secrets import lichess_api_token
-
-    print("Imported token")
+    logger.info("Loaded Lichess API token")
 except ImportError:
     lichess_api_token = ''
 
-if argv[1]:
-    cookie = argv[1]
+REQUEST_TIMEOUT = 30
 
 
 def get_unanalysed_game(username, skip=0, count=False):
@@ -33,47 +33,55 @@ def get_unanalysed_game(username, skip=0, count=False):
     if not count:
         params['max'] = skip + 1
 
-    r = requests.get(url, params=params, headers=headers)
+    r = requests.get(url, params=params, headers=headers, timeout=REQUEST_TIMEOUT)
     if count:
         return len(r.text.split())
     return json.loads(r.text.split()[-1])['id']
 
 
-def analyse(game_id):
+def analyse(game_id, cookie):
     headers = {
         'Cookie': cookie
     }
     url = f'https://lichess.org/{game_id}/request-analysis'
-    print()
-    print(f'Analyzing {game_id}.', end='')
+    logger.info(f'Analyzing {game_id}...')
 
-    r = requests.post(url, headers=headers)
+    r = requests.post(url, headers=headers, timeout=REQUEST_TIMEOUT)
     if r.status_code != 204:
-        raise Exception(r)
+        raise Exception(f"Analysis request failed with status {r.status_code}: {r.text}")
 
 
-prev_game_id = 0
-games_analysed = 0
-skip = 0
-username = 'kewko'
-while True:
-    game_id = get_unanalysed_game(username, skip=skip)
-    if game_id != prev_game_id:
-        try:
-            analyse(game_id)
-            games_analysed += 1
-        except Exception as e:
-            if skip > 4 or games_analysed >= 30:
-                print()
-                print(
-                    f"Done. Analysed {games_analysed} games. {get_unanalysed_game(username, count=True)} games "
-                    f"remaining.")
-                break
-            else:
-                print(e)
-                print(f"Skipping {game_id}")
-                skip += 1
-    else:
-        print(".", end='')
-    time.sleep(5)
-    prev_game_id = game_id
+def main():
+    if len(sys.argv) < 2:
+        logger.error("Usage: python analyse.py <cookie> [username]")
+        sys.exit(1)
+
+    cookie = sys.argv[1]
+    username = sys.argv[2] if len(sys.argv) > 2 else 'kewko'
+
+    prev_game_id = 0
+    games_analysed = 0
+    skip = 0
+
+    while True:
+        game_id = get_unanalysed_game(username, skip=skip)
+        if game_id != prev_game_id:
+            try:
+                analyse(game_id, cookie)
+                games_analysed += 1
+            except Exception as e:
+                if skip > 4 or games_analysed >= 30:
+                    remaining = get_unanalysed_game(username, count=True)
+                    logger.info(f"Done. Analysed {games_analysed} games. {remaining} games remaining.")
+                    break
+                else:
+                    logger.warning(f"Error: {e}. Skipping {game_id}")
+                    skip += 1
+        else:
+            logger.debug("Waiting for analysis to complete...")
+        time.sleep(5)
+        prev_game_id = game_id
+
+
+if __name__ == '__main__':
+    main()

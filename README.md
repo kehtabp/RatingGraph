@@ -3,10 +3,10 @@
 
 ### To install requirements and run
 
-1) Install python 3 and pip
+1) Install python 3 and [uv](https://docs.astral.sh/uv/)
 2) Run
 ```
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 python src/load.py -u lichess_username -e
 ```
 ### Help
